@@ -2,5 +2,5 @@ flask
 requests
 sentence-transformers
 numpy
-gunicorn
+
 
