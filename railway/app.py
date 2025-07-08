@@ -4,6 +4,7 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
+# CORS padrão (mas reforçaremos com after_request!)
 CORS(app, origins=["https://www.ton.com.br"], supports_credentials=True)
 
 def ensure_file(fname, default):
@@ -30,11 +31,21 @@ def get_examples():
 def get_labels():
     try:
         if not os.path.exists(LABELS_FILE):
+            # Cria um novo labels.json vazio se não existe
+            with open(LABELS_FILE, "w", encoding="utf-8") as f:
+                json.dump([], f)
             return jsonify({"ok": False, "labels": []}), 200
         with open(LABELS_FILE, encoding="utf-8") as f:
-            labels = json.load(f)
-        return jsonify({"ok": True, "labels": labels})
+            try:
+                labels = json.load(f)
+            except Exception:
+                # Se corrompido, zera o arquivo
+                labels = []
+                with open(LABELS_FILE, "w", encoding="utf-8") as fw:
+                    json.dump([], fw)
+        return jsonify({"ok": True if labels else False, "labels": labels})
     except Exception:
+        # Nunca retorna 500 para front!
         return jsonify({"ok": False, "labels": []}), 200
 
 @app.route("/predict", methods=["POST"])
@@ -69,15 +80,24 @@ def salvar_examples():
         print("[Auto-UX] ERRO no treino automático:", e)
         return jsonify({"ok": False, "msg": str(e)}), 500
 
-# -- CORS em todas as respostas --
+# --- CORS universal em toda resposta ---
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     return response
 
-# -- CORS até em erros 500/404/etc --
+# --- Handler universal para OPTIONS (preflight) ---
+@app.route('/<path:path>', methods=['OPTIONS'])
+def options_handler(path):
+    response = make_response('', 200)
+    response.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    return response
+
+# --- CORS até em erros ---
 @app.errorhandler(Exception)
 def handle_error(e):
     import traceback
@@ -85,7 +105,7 @@ def handle_error(e):
     resp = make_response(str(e) + "\n" + tb, 500)
     resp.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
     resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    resp.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    resp.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     return resp
 
 if __name__ == "__main__":
