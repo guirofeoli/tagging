@@ -1,12 +1,10 @@
 import json
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import os
 
 app = Flask(__name__)
 CORS(app, origins=["https://www.ton.com.br"], supports_credentials=True)
-
-# --- Helpers ---
 
 def ensure_file(fname, default):
     if not os.path.exists(fname):
@@ -17,8 +15,6 @@ def ensure_file(fname, default):
 EXAMPLES_FILE = ensure_file("ux_examples.json", [])
 VOCAB_FILE = ensure_file("allWords.json", [])
 LABELS_FILE = ensure_file("labels.json", [])
-
-# --- Endpoints ---
 
 @app.route("/", methods=["GET"])
 def health():
@@ -33,11 +29,13 @@ def get_examples():
 @app.route("/get_labels", methods=["GET"])
 def get_labels():
     try:
+        if not os.path.exists(LABELS_FILE):
+            return jsonify({"ok": False, "labels": []}), 200
         with open(LABELS_FILE, encoding="utf-8") as f:
             labels = json.load(f)
         return jsonify({"ok": True, "labels": labels})
     except Exception:
-        return jsonify({"ok": False, "labels": []}), 404
+        return jsonify({"ok": False, "labels": []}), 200
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -71,14 +69,24 @@ def salvar_examples():
         print("[Auto-UX] ERRO no treino automático:", e)
         return jsonify({"ok": False, "msg": str(e)}), 500
 
-# --- CORS extra for preflight ---
+# -- CORS em todas as respostas --
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    response.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
     return response
 
-# --- Run ---
+# -- CORS até em erros 500/404/etc --
+@app.errorhandler(Exception)
+def handle_error(e):
+    import traceback
+    tb = traceback.format_exc()
+    resp = make_response(str(e) + "\n" + tb, 500)
+    resp.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
+    resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    resp.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    return resp
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
