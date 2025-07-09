@@ -5,6 +5,8 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import joblib
+from git_utils import save_file_to_github, get_file_from_github
+import base64
 
 def extract_tokens(features):
     """Extrai tokens simples do dicionário de features para o one-hot."""
@@ -64,13 +66,39 @@ def train_and_save_model(json_path="ux_examples.json"):
     clf.fit(X, y)
     print("[Auto-UX] Modelo treinado!")
 
-    # Salva o modelo e os arquivos auxiliares
+    # Salva o modelo e os arquivos auxiliares localmente
     joblib.dump(clf, "model.bin")
     with open("allWords.json", "w", encoding="utf-8") as f:
         json.dump(vocab, f, ensure_ascii=False)
     with open("labels.json", "w", encoding="utf-8") as f:
         json.dump(list(label_encoder.classes_), f, ensure_ascii=False)
     print("[Auto-UX] Modelo salvo em model.bin, vocab salvo em allWords.json, labels em labels.json.")
+
+    # ------- Envia para o GitHub -------
+    print("[Auto-UX] Enviando arquivos de modelo para o GitHub...")
+
+    # model.bin
+    with open("model.bin", "rb") as f:
+        model_content = base64.b64encode(f.read()).decode("utf-8")
+    _, sha_model = get_file_from_github("model.bin")
+    status_model, resp_model = save_file_to_github("model.bin", model_content, "Atualiza modelo treinado", sha=sha_model)
+    print(f"[Auto-UX] model.bin GitHub status: {status_model}")
+
+    # allWords.json
+    with open("allWords.json", "r", encoding="utf-8") as f:
+        vocab_content = f.read()
+    _, sha_vocab = get_file_from_github("allWords.json")
+    status_vocab, resp_vocab = save_file_to_github("allWords.json", vocab_content, "Atualiza vocab", sha=sha_vocab)
+    print(f"[Auto-UX] allWords.json GitHub status: {status_vocab}")
+
+    # labels.json
+    with open("labels.json", "r", encoding="utf-8") as f:
+        labels_content = f.read()
+    _, sha_labels = get_file_from_github("labels.json")
+    status_labels, resp_labels = save_file_to_github("labels.json", labels_content, "Atualiza labels", sha=sha_labels)
+    print(f"[Auto-UX] labels.json GitHub status: {status_labels}")
+
+    print("[Auto-UX] Upload para o GitHub finalizado.")
 
 if __name__ == "__main__":
     train_and_save_model()
