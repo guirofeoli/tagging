@@ -617,5 +617,196 @@
     "y": 91,
     "siblingIndex": 0,
     "contextHeadings": []
+  },
+  {
+    "sessao": "consentimento",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "Gerenciar",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "cc-link cmp-pref-link ",
+        "id": "securitiCmpCookiePrefBtn",
+        "text": "Gerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-compliance cc-highlight cc-regular",
+        "id": "",
+        "text": "Aceitar todos\nApenas essenciais\nGerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-window cc-banner cc-type-opt-in cc-theme-classic cc-bottom cc-color-override-118586167 ",
+        "id": "",
+        "text": "Utilizamos cookies para otimizar sua experiência e personalizar anúncios, de acordo com nosso\n\n Aviso de Cookies.\nAceitar todos\nApenas essenciais\nGerenciar"
+      }
+    ],
+    "length": 9,
+    "y": 99,
+    "siblingIndex": 1,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "consentimento",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "Gerenciar",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "cc-link cmp-pref-link ",
+        "id": "securitiCmpCookiePrefBtn",
+        "text": "Gerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-compliance cc-highlight cc-regular",
+        "id": "",
+        "text": "Aceitar todos\nApenas essenciais\nGerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-window cc-banner cc-type-opt-in cc-theme-classic cc-bottom cc-color-override-118586167 ",
+        "id": "",
+        "text": "Utilizamos cookies para otimizar sua experiência e personalizar anúncios, de acordo com nosso\n\n Aviso de Cookies.\nAceitar todos\nApenas essenciais\nGerenciar"
+      }
+    ],
+    "length": 9,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Conteúdo",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "Gerenciar",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "cc-link cmp-pref-link ",
+        "id": "securitiCmpCookiePrefBtn",
+        "text": "Gerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-compliance cc-highlight cc-regular",
+        "id": "",
+        "text": "Aceitar todos\nApenas essenciais\nGerenciar"
+      },
+      {
+        "tag": "DIV",
+        "class": "cc-window cc-banner cc-type-opt-in cc-theme-classic cc-bottom cc-color-override-118586167 ",
+        "id": "",
+        "text": "Utilizamos cookies para otimizar sua experiência e personalizar anúncios, de acordo com nosso\n\n Aviso de Cookies.\nAceitar todos\nApenas essenciais\nGerenciar"
+      }
+    ],
+    "length": 9,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "modal cookie",
+    "tag": "P",
+    "class": "",
+    "id": "",
+    "text": "configurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário.",
+    "parents": [
+      {
+        "tag": "LI",
+        "class": "",
+        "id": "",
+        "text": "configurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário."
+      },
+      {
+        "tag": "UL",
+        "class": "",
+        "id": "",
+        "text": "ativar o modo de navegação sigilosa, disponível na maior parte dos navegadores, o qual permite que nenhum cookie permaneça no dispositivo do usuário após fechar a janela do navegador; ou\n\nconfigurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário."
+      },
+      {
+        "tag": "DIV",
+        "class": "cmp-modal__sub-title",
+        "id": "cmpModalDesc-cookies",
+        "text": "Usamos diferentes tipos de cookies para otimizar sua experiência em nosso site. Clique nas categorias abaixo para saber mais sobre sua finalidade, além disso, você pode escolher quais tipos de cookies permitir e pode alterar suas preferências a qualquer momento. Você pode saber mais sobre como usamos cookies visitando nossa Política Cookies.\n\nNão quero permitir a coleta de Cookies, o que posso fazer?\n\nVocê poderá desativar alguns dos cookies, através deste Painel ou pode realizar a configuração do seu navegador, podendo:\n\nativar o modo de navegação sigilosa, disponível na maior parte dos navegadores, o qual permite que nenhum cookie permaneça no dispositivo do usuário após fechar a janela do navegador; ou\n\nconfigurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário.\n\nOs navegadores também permitem que o usuário exclua os cookies que já estejam armazenados em seu computador.\n\nLembre-se! Caso você opte por não permitir a utilização de cookies, nosso site poderá não funcionar corretamente, e as suas funcionalidades também poderão tornar-se parcial ou totalmente indisponíveis.\n\nPara exercer seus Direitos de forma simples e facilitada, preencha nosso Formulário de Atendimento."
+      }
+    ],
+    "length": 92,
+    "y": 3,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "configurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário.",
+      "Você poderá desativar alguns dos cookies, através deste Painel ou pode realizar a configuração do seu navegador, podendo:",
+      "Não quero permitir a coleta de Cookies, o que posso fazer?",
+      "Usamos diferentes tipos de cookies para otimizar sua experiência em nosso site. Clique nas categorias abaixo para saber mais sobre sua finalidade, além disso, você pode escolher quais tipos de cookies permitir e pode alterar suas preferências a qualquer momento. Você pode saber mais sobre como usamos cookies visitando nossa Política Cookies."
+    ]
+  },
+  {
+    "sessao": "Hero",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Peça já sua maquininha",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+        "id": "",
+        "text": "Peça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap md:order-4 gap-16 justify-center lg:justify-start w-full md:w-min max-w-[464px]",
+        "id": "",
+        "text": "Peça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:gap-24 justify-center items-center md:items-start mx-auto w-full lg:max-w-[370px] xl:max-w-full",
+        "id": "",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      }
+    ],
+    "length": 22,
+    "y": 6,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Menu",
+    "tag": "DIV",
+    "class": "px-16 lg:px-8 xl:px-16 my-auto font-medium text-display-900 paragraph-16 lg:paragraph-14 xl:paragraph-16",
+    "id": "",
+    "text": "Soluções",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "Header_menuContainer__MS5iG relative",
+        "id": "Soluções",
+        "text": "Soluções\n\nSuper Conta Ton\n\nConta digital sem tarifas\n\nBaú do Ton\n\nGuarde uma grana e veja seu dinheiro render 100% do CDI\n\nTapTon\n\nTransforme seu celular numa maquininha\n\nTap to Pay no iPhone\n\nAceite pagamentos por aproximação com seu iPhone e App Ton\n\nLink de Pagamento\n\nLink de Pagamento para vender online e com as menores taxas | Ton\n\nPix na Maquininha\n\nReceba pagamentos na hora\n\nReceba no mesmo dia\n\nReceba o dinheiro das vendas no mesmo dia ativando no app\n\nCartão de Crédito e Débito\n\n100% grátis, zero taxa e sem anuidade\n\nSeguros Ton\n\nProteção pra você viver mais tranquilo\n\nLimite de conta\n\nCrédito extra para usar no seu negócio\n\nCapital de Giro\n\nEmpréstimo para PJ"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden md:flex flex-1 justify-between items-center self-stretch ml-24 w-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\n\nSuper Conta Ton\n\nConta digital sem tarifas\n\nBaú do Ton\n\nGuarde uma grana e veja seu dinheiro render 100% do CDI\n\nTapTon\n\nTransforme seu celular numa maquininha\n\nTap to Pay no iPhone\n\nAceite pagamentos por aproximação com seu iPhone e App Ton\n\nLink de Pagamento\n\nLink de Pagamento para vender online e com as menores taxas | Ton\n\nPix na Maquininha\n\nReceba pagamentos na hora\n\nReceba no mesmo dia\n\nReceba o dinheiro das vendas no mesmo dia ativando no app\n\nCartão de Crédito e Débito\n\n100% grátis, zero taxa e sem anuidade\n\nSeguros Ton\n\nProteção pra você viver mais tranquilo\n\nLimite de conta\n\nCrédito extra para usar no seu negócio\n\nCapital de Giro\n\nEmpréstimo para PJ\n\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden lg:flex justify-between lg:justify-center items-center mx-auto max-w-screen-xl h-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\n\nSuper Conta Ton\n\nConta digital sem tarifas\n\nBaú do Ton\n\nGuarde uma grana e veja seu dinheiro render 100% do CDI\n\nTapTon\n\nTransforme seu celular numa maquininha\n\nTap to Pay no iPhone\n\nAceite pagamentos por aproximação com seu iPhone e App Ton\n\nLink de Pagamento\n\nLink de Pagamento para vender online e com as menores taxas | Ton\n\nPix na Maquininha\n\nReceba pagamentos na hora\n\nReceba no mesmo dia\n\nReceba o dinheiro das vendas no mesmo dia ativando no app\n\nCartão de Crédito e Débito\n\n100% grátis, zero taxa e sem anuidade\n\nSeguros Ton\n\nProteção pra você viver mais tranquilo\n\nLimite de conta\n\nCrédito extra para usar no seu negócio\n\nCapital de Giro\n\nEmpréstimo para PJ\n\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      }
+    ],
+    "length": 8,
+    "y": 1,
+    "siblingIndex": 0,
+    "contextHeadings": []
   }
 ]
