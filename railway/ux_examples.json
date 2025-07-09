@@ -808,5 +808,493 @@
     "y": 1,
     "siblingIndex": 0,
     "contextHeadings": []
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Hero",
+    "tag": "A",
+    "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+    "id": "",
+    "text": "Peça já sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap md:order-4 gap-16 justify-center lg:justify-start w-full md:w-min max-w-[464px]",
+        "id": "",
+        "text": "Peça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:gap-24 justify-center items-center md:items-start mx-auto w-full lg:max-w-[370px] xl:max-w-full",
+        "id": "",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "max-w-[1200px] mx-auto flex flex-col md:flex-row gap-24 lg:gap-40 md:items-center",
+        "id": "",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      }
+    ],
+    "length": 22,
+    "y": 6,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Header",
+    "tag": "SPAN",
+    "class": "flex text-12 md:text-14 font-bold leading-18 md:leading-20 text-center",
+    "id": "",
+    "text": "DESCONTO ESPECIAL acaba em:",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex items-center p-4 md:p-8 w-full max-w-[162px] md:max-w-none h-[auto] rounded-8",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 md:gap-16 items-center",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:\n1\ndia\n:\n07\nhoras\n:\n24\nminutos\n:\n35\nsegundos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center p-8",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:\n1\ndia\n:\n07\nhoras\n:\n24\nminutos\n:\n35\nsegundos"
+      }
+    ],
+    "length": 27,
+    "y": 1,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Menu",
+    "tag": "P",
+    "class": "mt-2 text-display-600 paragraph-14",
+    "id": "",
+    "text": "Descubra a melhor maquininha pro seu negócio",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "ml-12",
+        "id": "",
+        "text": "Compare as maquininhas\n\nDescubra a melhor maquininha pro seu negócio"
+      },
+      {
+        "tag": "A",
+        "class": "flex items-center",
+        "id": "",
+        "text": "Compare as maquininhas\n\nDescubra a melhor maquininha pro seu negócio"
+      },
+      {
+        "tag": "DIV",
+        "class": "Header_menu__8w9ys",
+        "id": "",
+        "text": "Compare as maquininhas\n\nDescubra a melhor maquininha pro seu negócio\n\nMaquininha T1\n\nÀ partir de 12x de R$ 1,40\n\nMaquininha T2\n\nÀ partir de 12x de R$ 4,47\n\nMaquininha T3\n\nÀ partir de 12x de R$ 9,41\n\nMaquininha T3 Smart\n\nÀ partir de 12x de R$ 11,02"
+      }
+    ],
+    "length": 44,
+    "y": 2,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Compare as maquininhas",
+      "Descubra a melhor maquininha pro seu negócio"
+    ]
+  },
+  {
+    "sessao": "Menu",
+    "tag": "P",
+    "class": "font-medium",
+    "id": "",
+    "text": "Maquininha T2",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "ml-12",
+        "id": "",
+        "text": "Maquininha T2\n\nÀ partir de 12x de R$ 4,47"
+      },
+      {
+        "tag": "A",
+        "class": "flex items-center p-16",
+        "id": "btn-maquininha-T2",
+        "text": "Maquininha T2\n\nÀ partir de 12x de R$ 4,47"
+      },
+      {
+        "tag": "DIV",
+        "class": "Header_menu__8w9ys",
+        "id": "",
+        "text": "Compare as maquininhas\n\nDescubra a melhor maquininha pro seu negócio\n\nMaquininha T1\n\nÀ partir de 12x de R$ 1,40\n\nMaquininha T2\n\nÀ partir de 12x de R$ 4,47\n\nMaquininha T3\n\nÀ partir de 12x de R$ 9,41\n\nMaquininha T3 Smart\n\nÀ partir de 12x de R$ 11,02"
+      }
+    ],
+    "length": 13,
+    "y": 4,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Maquininha T2"
+    ]
+  },
+  {
+    "sessao": "Menu",
+    "tag": "P",
+    "class": "font-medium paragraph-16",
+    "id": "",
+    "text": "Tap to Pay no iPhone",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex",
+        "id": "",
+        "text": "Tap to Pay no iPhone"
+      },
+      {
+        "tag": "DIV",
+        "class": "ml-12",
+        "id": "",
+        "text": "Tap to Pay no iPhone\n\nAceite pagamentos por aproximação com seu iPhone e App Ton"
+      },
+      {
+        "tag": "A",
+        "class": "flex items-center Header_solution__ObOgx",
+        "id": "Tap to Pay no iPhone",
+        "text": "Tap to Pay no iPhone\n\nAceite pagamentos por aproximação com seu iPhone e App Ton"
+      }
+    ],
+    "length": 20,
+    "y": 4,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Tap to Pay no iPhone"
+    ]
+  },
+  {
+    "sessao": "Menu",
+    "tag": "A",
+    "class": "px-16 lg:px-8 xl:px-16 my-auto font-medium text-display-900 hover:text-ton-500 paragraph-16 lg:paragraph-14 xl:paragraph-16 ",
+    "id": "Seja um consultor",
+    "text": "Seja um consultor",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "hidden md:flex flex-1 justify-between items-center self-stretch ml-24 w-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden lg:flex justify-between lg:justify-center items-center mx-auto max-w-screen-xl h-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "sticky lg:relative top-[-1px] z-[52] px-16 md:px-24 h-[64px] md:h-[72px] bg-display-0 lg:shadow-none",
+        "id": "Context_menu",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      }
+    ],
+    "length": 17,
+    "y": 1,
+    "siblingIndex": 4,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Header",
+    "tag": "SPAN",
+    "class": "flex text-12 md:text-14 font-bold leading-18 md:leading-20 text-center",
+    "id": "",
+    "text": "DESCONTO ESPECIAL acaba em:",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex items-center p-4 md:p-8 w-full max-w-[162px] md:max-w-none h-[auto] rounded-8",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 md:gap-16 items-center",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:\n1\ndia\n:\n07\nhoras\n:\n24\nminutos\n:\n16\nsegundos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center p-8",
+        "id": "",
+        "text": "DESCONTO ESPECIAL acaba em:\n1\ndia\n:\n07\nhoras\n:\n24\nminutos\n:\n16\nsegundos"
+      }
+    ],
+    "length": 27,
+    "y": 1,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between ton-paragraph-16",
+    "id": "dropdown-select-receiving",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da Venda\n1 dia útil"
+      }
+    ],
+    "length": 10,
+    "y": 48,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Muito além da maquininha",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Venda mais com Pix",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+        "id": "",
+        "text": "Venda mais com Pix"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap gap-16 justify-center md:justify-start mt-24",
+        "id": "",
+        "text": "Venda mais com Pix\nVeja mais sobre Pix"
+      },
+      {
+        "tag": "DIV",
+        "class": "mt-auto",
+        "id": "",
+        "text": "Venda mais com Pix\nVeja mais sobre Pix"
+      }
+    ],
+    "length": 18,
+    "y": 65,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Por QR Code ou aproximação, receba os pagamentos na hora via Pix e gere comprovantes, é mais segurança pra você e pro seu cliente.",
+      "Não perca nenhuma venda, receba Pix na Maquininha Ton",
+      "Muito além da maquininha"
+    ]
+  },
+  {
+    "sessao": "modal baixe o app do ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": " flex absolute top-24 md:top-40 right-24 md:right-40 justify-center items-center p-8 md:w-40 md:h-40 bg-display-100 rounded-full",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex relative flex-col justify-center items-center p-24 md:p-40 xs:ml-auto w-full max-w-[480px] h-full bg-display-0 md:rounded-tl-2xl transition-all transform-gpu translate-x-0",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      },
+      {
+        "tag": "DIV",
+        "class": "fixed z-[10000] top-0 overflow-hidden h-screen bg-display-900 bg-opacity-25 w-screen",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      }
+    ],
+    "length": 0,
+    "y": 64,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?",
+    "tag": "A",
+    "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+    "id": "",
+    "text": "Escolha seu Plano",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 justify-center pb-8 mt-24 w-full",
+        "id": "",
+        "text": "Escolha seu Plano\nAbra sua Conta Ton"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col justify-center items-center w-full max-w-[455px] md:max-w-[730px]",
+        "id": "",
+        "text": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-40 lg:py-80 px-24 w-full bg-display-200",
+        "id": "ton-parceiro-ideal",
+        "text": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton"
+      }
+    ],
+    "length": 17,
+    "y": 81,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?"
+    ]
+  },
+  {
+    "sessao": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?",
+    "tag": "A",
+    "class": "btn whitespace-nowrap btn-secondary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+    "id": "",
+    "text": "Abra sua Conta Ton",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 justify-center pb-8 mt-24 w-full",
+        "id": "",
+        "text": "Escolha seu Plano\nAbra sua Conta Ton"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col justify-center items-center w-full max-w-[455px] md:max-w-[730px]",
+        "id": "",
+        "text": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-40 lg:py-80 px-24 w-full bg-display-200",
+        "id": "ton-parceiro-ideal",
+        "text": "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton"
+      }
+    ],
+    "length": 18,
+    "y": 81,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?"
+    ]
+  },
+  {
+    "sessao": "Footer",
+    "tag": "A",
+    "class": "paragraph-14 text-display-0 my-6",
+    "id": "",
+    "text": "Portal de Privacidade",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "Links_category__0RNwd",
+        "id": "",
+        "text": "INSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap mb-16",
+        "id": "",
+        "text": "MAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS"
+      },
+      {
+        "tag": "DIV",
+        "class": "mx-auto max-w-screen-xl",
+        "id": "",
+        "text": "MAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS\n\nTON\nSTONE\nPAGAR.ME\n\nv1.117.0"
+      }
+    ],
+    "length": 21,
+    "y": 95,
+    "siblingIndex": 2,
+    "contextHeadings": [
+      "INSTITUCIONAL"
+    ]
   }
 ]
