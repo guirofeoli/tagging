@@ -1,4 +1,3 @@
-# train_ux.py
 import json
 import os
 import numpy as np
@@ -6,17 +5,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import joblib
 
-try:
-    from git_utils import save_file_to_github
-except ImportError:
-    # Para teste local, ignora upload ao GitHub
-    def save_file_to_github(*a, **k): return (200, {"dummy": True})
+# Funções do git_utils
+from git_utils import save_file_to_github, get_file_from_github
 
 EXAMPLES_FILE = "ux_examples.json"
-MODEL_FILE = "model.bin"
 VOCAB_FILE = "allWords.json"
 LABELS_FILE = "labels.json"
-NUMERIC_MEANS_FILE = "numeric_means.json"
+MODEL_FILE = "model.bin"
+NUMERIC_MEANS_FILE = "numeric_means.json"  # se usar features numéricas
 
 def extract_tokens(features):
     tokens = []
@@ -46,18 +42,9 @@ def build_vocab(examples):
         vocab.update(tokens)
     return sorted(vocab)
 
-def example_to_vector(example, vocab, numeric_keys=None, numeric_means=None):
+def example_to_vector(example, vocab):
     tokens = set(extract_tokens(example))
-    # One-hot textual
-    vector = [1 if w in tokens else 0 for w in vocab]
-    # Campos numéricos enriquecidos (padronizados)
-    if numeric_keys:
-        for k in numeric_keys:
-            val = example.get(k, None)
-            if val is None:
-                val = numeric_means.get(k, 0) if numeric_means else 0
-            vector.append(float(val))
-    return vector
+    return [1 if w in tokens else 0 for w in vocab]
 
 def train_and_save_model(json_path=EXAMPLES_FILE):
     print("[Auto-UX] Lendo exemplos rotulados...")
@@ -67,30 +54,10 @@ def train_and_save_model(json_path=EXAMPLES_FILE):
         raise Exception("Nenhum exemplo rotulado encontrado!")
     print(f"[Auto-UX] {len(examples)} exemplos carregados.")
 
-    # Defina os campos numéricos adicionais que deseja usar:
-    numeric_keys = [
-        "length", "y", "siblingIndex", "width", "height", "visible", "depth", "numChildren"
-    ]
-    # Calcule médias dos campos numéricos para preencher valores faltantes
-    numeric_means = {}
-    for k in numeric_keys:
-        arr = [ex.get(k, 0) for ex in examples if k in ex]
-        numeric_means[k] = float(np.mean(arr)) if arr else 0
-
-    # Salva médias para usar no predict
-    with open(NUMERIC_MEANS_FILE, "w", encoding="utf-8") as f:
-        json.dump(numeric_means, f, ensure_ascii=False)
-    print("[Auto-UX] Média dos campos numéricos salva em numeric_means.json.")
-
-    # Salva no GitHub (Railway)
-    status, resp = save_file_to_github(NUMERIC_MEANS_FILE, json.dumps(numeric_means, ensure_ascii=False, indent=2), "Atualiza numeric_means.json", sha=None)
-    print("[Auto-UX] numeric_means.json save_file_to_github:", status)
-
     # Monta vocab e extrai features
     vocab = build_vocab(examples)
     print(f"[Auto-UX] Vocab extraído: {len(vocab)} tokens.")
-
-    X = [example_to_vector(ex, vocab, numeric_keys, numeric_means) for ex in examples]
+    X = [example_to_vector(ex, vocab) for ex in examples]
     y_raw = [ex["sessao"] for ex in examples]
 
     # Label encoding
@@ -103,21 +70,49 @@ def train_and_save_model(json_path=EXAMPLES_FILE):
     clf.fit(X, y)
     print("[Auto-UX] Modelo treinado!")
 
-    # Salva o modelo e os arquivos auxiliares
+    # Salva o modelo e os arquivos auxiliares localmente
     joblib.dump(clf, MODEL_FILE)
     with open(VOCAB_FILE, "w", encoding="utf-8") as f:
         json.dump(vocab, f, ensure_ascii=False)
     with open(LABELS_FILE, "w", encoding="utf-8") as f:
         json.dump(list(label_encoder.classes_), f, ensure_ascii=False)
-    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, stats).")
 
-    # Salva no GitHub
-    for fname, fcontent in [
-        (LABELS_FILE, json.dumps(list(label_encoder.classes_), ensure_ascii=False, indent=2)),
-        (VOCAB_FILE, json.dumps(vocab, ensure_ascii=False, indent=2)),
-    ]:
-        status, resp = save_file_to_github(fname, fcontent, f"Atualiza {fname}", sha=None)
-        print(f"[Auto-UX] {fname} save_file_to_github: status {status}")
+    # Se quiser calcular médias para features numéricas (opcional)
+    numeric_means = None
+    try:
+        numeric_features = []
+        for ex in examples:
+            feats = []
+            for k in ["length", "y", "siblingIndex", "width", "height", "visible", "depth", "numChildren"]:
+                feats.append(ex.get(k, 0))
+            numeric_features.append(feats)
+        arr = np.array(numeric_features)
+        numeric_means = dict(zip(
+            ["length", "y", "siblingIndex", "width", "height", "visible", "depth", "numChildren"],
+            np.nanmean(arr, axis=0)
+        ))
+        with open(NUMERIC_MEANS_FILE, "w", encoding="utf-8") as f:
+            json.dump(numeric_means, f, ensure_ascii=False)
+    except Exception as e:
+        print("[Auto-UX] (Opcional) Falha ao calcular médias numéricas:", e)
+
+    # Salva todos os arquivos também no GitHub!
+    print("[Auto-UX] Salvando arquivos do modelo no GitHub...")
+    # Upload model.bin (binário!)
+    with open(MODEL_FILE, "rb") as f:
+        save_file_to_github(MODEL_FILE, f.read(), "Atualiza modelo treinado UX", is_binary=True)
+    # Upload vocab
+    with open(VOCAB_FILE, "r", encoding="utf-8") as f:
+        save_file_to_github(VOCAB_FILE, f.read(), "Atualiza vocab UX")
+    # Upload labels
+    with open(LABELS_FILE, "r", encoding="utf-8") as f:
+        save_file_to_github(LABELS_FILE, f.read(), "Atualiza labels treinados UX")
+    # Upload numeric_means.json se existir
+    if numeric_means is not None:
+        with open(NUMERIC_MEANS_FILE, "r", encoding="utf-8") as f:
+            save_file_to_github(NUMERIC_MEANS_FILE, f.read(), "Atualiza numeric_means UX")
+
+    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, stats).")
 
 if __name__ == "__main__":
     train_and_save_model()
