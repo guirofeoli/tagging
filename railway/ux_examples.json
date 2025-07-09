@@ -1501,5 +1501,389 @@
     "contextHeadings": [
       "Conheça os Planos Ton"
     ]
+  },
+  {
+    "sessao": "Menu",
+    "tag": "A",
+    "class": "px-16 lg:px-8 xl:px-16 my-auto font-medium text-display-900 hover:text-ton-500 paragraph-16 lg:paragraph-14 xl:paragraph-16 ",
+    "id": "Ton pro MEI e PJ",
+    "text": "Ton pro MEI e PJ",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "hidden md:flex flex-1 justify-between items-center self-stretch ml-24 w-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden lg:flex justify-between lg:justify-center items-center mx-auto max-w-screen-xl h-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "sticky lg:relative top-[-1px] z-[52] px-16 md:px-24 h-[64px] md:h-[72px] bg-display-0 lg:shadow-none",
+        "id": "Context_menu",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      }
+    ],
+    "length": 16,
+    "y": 1,
+    "siblingIndex": 3,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Menu",
+    "tag": "B",
+    "class": "font-bold",
+    "id": "",
+    "text": "Pedir Agora",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn btn-primary btn-regular ml-16 bg-newTon-400",
+        "id": "",
+        "text": "Pedir Agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden lg:flex justify-between lg:justify-center items-center mx-auto max-w-screen-xl h-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "sticky lg:relative top-[-1px] z-[52] px-16 md:px-24 h-[64px] md:h-[72px] bg-display-0 lg:shadow-none",
+        "id": "Context_menu",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      }
+    ],
+    "length": 11,
+    "y": 1,
+    "siblingIndex": 1,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Menu",
+    "tag": "A",
+    "class": "px-16 lg:px-8 xl:px-16 my-auto font-medium text-display-900 hover:text-ton-500 paragraph-16 lg:paragraph-14 xl:paragraph-16 ",
+    "id": "Blog",
+    "text": "Blog",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "hidden md:flex flex-1 justify-between items-center self-stretch ml-24 w-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App"
+      },
+      {
+        "tag": "DIV",
+        "class": "hidden lg:flex justify-between lg:justify-center items-center mx-auto max-w-screen-xl h-full",
+        "id": "",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "sticky lg:relative top-[-1px] z-[52] px-16 md:px-24 h-[64px] md:h-[72px] bg-display-0 lg:shadow-none",
+        "id": "Context_menu",
+        "text": "Maquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora"
+      }
+    ],
+    "length": 4,
+    "y": 1,
+    "siblingIndex": 5,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "H3",
+    "class": "font-default text-[16px] lg:text-[20px] font-bold leading-[26px] lg:leading-[28px]",
+    "id": "",
+    "text": "Como funciona a taxa única de adesão do Ton?",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-between",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?"
+      },
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha."
+      },
+      {
+        "tag": "UL",
+        "class": "flex overflow-hidden flex-col gap-16 px-16 md:px-24",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos."
+      }
+    ],
+    "length": 44,
+    "y": 85,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona a taxa única de adesão do Ton?"
+    ]
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "ml-12 h-24 rotate-0 duration-[600ms] ease-in-out",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-between",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?"
+      },
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha."
+      }
+    ],
+    "length": 0,
+    "y": 83,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona a taxa única de adesão do Ton?"
+    ]
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "DIV",
+    "class": "flex justify-between",
+    "id": "",
+    "text": "Como funciona a taxa única de adesão do Ton?",
+    "parents": [
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha."
+      },
+      {
+        "tag": "UL",
+        "class": "flex overflow-hidden flex-col gap-16 px-16 md:px-24",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos."
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 items-center py-40 md:py-40 lg:py-80 mx-auto w-full max-w-screen-xl",
+        "id": "faq",
+        "text": "Ficou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha"
+      }
+    ],
+    "length": 44,
+    "y": 85,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "ml-12 h-24 rotate-180 duration-[400ms] ease-in-out",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-between",
+        "id": "",
+        "text": "O Pix QR Code ou Pix por Aproximação na máquina cobra taxa?"
+      },
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "O Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton."
+      }
+    ],
+    "length": 0,
+    "y": 88,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "O Pix QR Code ou Pix por Aproximação na máquina cobra taxa?"
+    ]
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "H3",
+    "class": "font-default text-[16px] lg:text-[20px] font-bold leading-[26px] lg:leading-[28px]",
+    "id": "",
+    "text": "Como funciona o recebimento no mesmo dia?",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-between",
+        "id": "",
+        "text": "Como funciona o recebimento no mesmo dia?"
+      },
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "Como funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia"
+      },
+      {
+        "tag": "UL",
+        "class": "flex overflow-hidden flex-col gap-16 px-16 md:px-24",
+        "id": "",
+        "text": "Como funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos."
+      }
+    ],
+    "length": 41,
+    "y": 85,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona o recebimento no mesmo dia?"
+    ]
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "P",
+    "class": "",
+    "id": "",
+    "text": "Antecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "MarkdownContent_Main__Y0H6z flex flex-col gap-8 mt-8",
+        "id": "",
+        "text": "Antecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "FaqItem_FaqItemText__4STTw opacity-100 max-h-[1000px] duration-[600ms] ease-in",
+        "id": "",
+        "text": "Antecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia"
+      },
+      {
+        "tag": "LI",
+        "class": "flex flex-col p-16 lg:p-24 first:mt-0 max-w-[840px] list-none bg-display-0 rounded-md border border-display-300 cursor-pointer",
+        "id": "",
+        "text": "Como funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia"
+      }
+    ],
+    "length": 252,
+    "y": 84,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Antecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone)."
+    ]
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Ir para a Central de Ajuda",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn whitespace-nowrap btn-secondary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+        "id": "",
+        "text": "Ir para a Central de Ajuda"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 justify-center w-full px-16 md:px-24",
+        "id": "",
+        "text": "Ir para a Central de Ajuda\nEscolha sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 items-center py-40 md:py-40 lg:py-80 mx-auto w-full max-w-screen-xl",
+        "id": "faq",
+        "text": "Ficou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha"
+      }
+    ],
+    "length": 26,
+    "y": 91,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "ficou alguma duvida",
+    "tag": "A",
+    "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+    "id": "",
+    "text": "Escolha sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 justify-center w-full px-16 md:px-24",
+        "id": "",
+        "text": "Ir para a Central de Ajuda\nEscolha sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 items-center py-40 md:py-40 lg:py-80 mx-auto w-full max-w-screen-xl",
+        "id": "faq",
+        "text": "Ficou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-100",
+        "id": "",
+        "text": "Ficou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha"
+      }
+    ],
+    "length": 22,
+    "y": 91,
+    "siblingIndex": 1,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Footer",
+    "tag": "A",
+    "class": "my-6 text-display-0 paragraph-14",
+    "id": "",
+    "text": "Maquininha T2",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "Links_category__0RNwd",
+        "id": "",
+        "text": "MAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap mb-16",
+        "id": "",
+        "text": "MAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS"
+      },
+      {
+        "tag": "DIV",
+        "class": "mx-auto max-w-screen-xl",
+        "id": "",
+        "text": "MAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS\n\nTON\nSTONE\nPAGAR.ME\n\nv1.117.0"
+      }
+    ],
+    "length": 13,
+    "y": 95,
+    "siblingIndex": 3,
+    "contextHeadings": [
+      "MAQUININHAS"
+    ]
   }
 ]
