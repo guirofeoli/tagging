@@ -2,7 +2,7 @@ import requests
 import base64
 
 # -------- CONFIGURAÇÃO ---------
-GITHUB_TOKEN = "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"  # Troque pelo seu!
+GITHUB_TOKEN = "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"  # Troque pelo seu!
 GITHUB_OWNER = "guirofeoli"
 GITHUB_REPO = "tagging"
 GITHUB_BRANCH = "main"
