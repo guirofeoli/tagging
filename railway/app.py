@@ -132,6 +132,7 @@ def salvar_examples():
         print("[Auto-UX] ERRO ao salvar no GitHub")
         return jsonify({"ok": False, "msg": "Erro ao salvar exemplos no GitHub", "resp": resp}), 500
 
+    # --- NOVO BLOCO: Salva labels.json e allWords.json no GitHub após treino ---
     try:
         import time
         print("[Auto-UX] Iniciando treinamento automático após salvar exemplos...")
@@ -142,7 +143,21 @@ def salvar_examples():
         train_and_save_model(EXAMPLES_FILE)
         t1 = time.time()
         print(f"[Auto-UX] Treinamento concluído em {t1-t0:.1f}s.")
-        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado!"})
+
+        # Salva labels.json e allWords.json no GitHub
+        for fname, desc in [("labels.json", "Atualiza labels treinados UX"),
+                            ("allWords.json", "Atualiza vocab UX")]:
+            try:
+                with open(fname, "r", encoding="utf-8") as f:
+                    file_data = f.read()
+                # Busca SHA antes de atualizar (evita erro de overwrite do GitHub)
+                old_data, old_sha = get_file_from_github(fname)
+                status2, resp2 = save_file_to_github(fname, file_data, desc, sha=old_sha)
+                print(f"[Auto-UX] {fname} save_file_to_github: status {status2}")
+            except Exception as e:
+                print(f"[Auto-UX] Falha ao salvar {fname} no GitHub:", e)
+
+        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado e arquivos publicados!"})
     except Exception as e:
         print("[Auto-UX] ERRO no treino automático:", e)
         return jsonify({"ok": False, "msg": str(e)}), 500
