@@ -1,8 +1,9 @@
 import requests
 import base64
+import os
 
 # -------- CONFIGURAÇÃO ---------
-GITHUB_TOKEN = "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"  # Troque pelo seu!
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")   # Busca a variável do ambiente!
 GITHUB_OWNER = "guirofeoli"
 GITHUB_REPO = "tagging"
 GITHUB_BRANCH = "main"
@@ -48,9 +49,3 @@ def save_file_to_github(filename, content, commit_msg, sha=None):
 
     resp = requests.put(url, json=payload, headers=headers)
     return resp.status_code, resp.json()
-
-# --------------------------
-# Exemplo de uso:
-# conteudo, sha = get_file_from_github("ux_examples.json")
-# status, res = save_file_to_github("ux_examples.json", '{"foo": "bar"}', "Teste commit", sha)
-# --------------------------
