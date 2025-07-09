@@ -1205,5 +1205,301 @@
     "contextHeadings": [
       "Já viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?"
     ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+    "id": "btn-term-0-day",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Hero",
+    "tag": "A",
+    "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+    "id": "",
+    "text": "Peça já sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap md:order-4 gap-16 justify-center lg:justify-start w-full md:w-min max-w-[464px]",
+        "id": "",
+        "text": "Peça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:gap-24 justify-center items-center md:items-start mx-auto w-full lg:max-w-[370px] xl:max-w-full",
+        "id": "",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "max-w-[1200px] mx-auto flex flex-col md:flex-row gap-24 lg:gap-40 md:items-center",
+        "id": "",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      }
+    ],
+    "length": 22,
+    "y": 6,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "DIV",
+    "class": "flex gap-8 items-center",
+    "id": "",
+    "text": "Ton Pro",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 7,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "B",
+    "class": "font-heading text-center text-newTon-700 ton-paragraph-28",
+    "id": "",
+    "text": "0,74%",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-4 w-full",
+        "id": "",
+        "text": "CRÉDITO\n0,74%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex",
+        "id": "",
+        "text": "DÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 5,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      }
+    ],
+    "length": 80,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "H5",
+    "class": "\n                        font-heading text-24 leading-36 font-bold\n                        text-display-900\n                      ",
+    "id": "",
+    "text": "Ton Pro",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 items-center",
+        "id": "",
+        "text": "Ton Pro"
+      },
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      }
+    ],
+    "length": 7,
+    "y": 10,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Ton Pro",
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "B",
+    "class": "font-heading text-center text-newTon-700 ton-paragraph-28",
+    "id": "",
+    "text": "0,74%",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-4 w-full",
+        "id": "",
+        "text": "DÉBITO\n0,74%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex",
+        "id": "",
+        "text": "DÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 5,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
   }
 ]
