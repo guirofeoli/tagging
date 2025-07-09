@@ -2,11 +2,26 @@
 import json
 import joblib
 import numpy as np
+import os
+from git_utils import get_file_from_github
+import base64
 
 # Cache (para evitar recarregar a cada request no Railway)
 _model = None
 _vocab = None
 _labels = None
+
+def ensure_file_from_github(filename, binary=False):
+    """Se o arquivo não existe localmente, busca do GitHub e salva local."""
+    if not os.path.exists(filename):
+        content, _ = get_file_from_github(filename)
+        if content:
+            mode = "wb" if binary else "w"
+            with open(filename, mode) as f:
+                if binary:
+                    f.write(base64.b64decode(content))
+                else:
+                    f.write(content)
 
 def extract_tokens(features):
     tokens = []
@@ -35,6 +50,11 @@ def example_to_vector(example, vocab):
 
 def _load_all():
     global _model, _vocab, _labels
+    # Garante que arquivos existam localmente
+    ensure_file_from_github("model.bin", binary=True)
+    ensure_file_from_github("allWords.json")
+    ensure_file_from_github("labels.json")
+
     if _model is None:
         _model = joblib.load("model.bin")
     if _vocab is None:
