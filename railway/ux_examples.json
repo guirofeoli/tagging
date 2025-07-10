@@ -1,1 +1,398 @@
-[]
+[
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-0 bg-newTon-600 font-bold",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      }
+    ],
+    "length": 80,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "DIV",
+    "class": "w-full",
+    "id": "",
+    "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 49,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      }
+    ],
+    "length": 80,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "B",
+    "class": "paragraph-18 transition-all font-medium text-display-700",
+    "id": "",
+    "text": "TapTon",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "py-12 px-16 rounded-t-[8px] transition-all whitespace-nowrap w-auto bg-transparent border-display-400 border border-b-0",
+        "id": "btn-newcalc-tapton",
+        "text": "TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-nowrap gap-8",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "overflow-x-auto w-full",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      }
+    ],
+    "length": 6,
+    "y": 44,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between text-14",
+    "id": "dropdown-select-promotion-tier",
+    "text": "Acima de R$ 50 mil",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "Acima de R$ 50 mil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 lg:p-40 w-full lg:border-r",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon"
+      }
+    ],
+    "length": 18,
+    "y": 45,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between ton-paragraph-16",
+    "id": "dropdown-select-receiving",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da Venda\n1 dia útil"
+      }
+    ],
+    "length": 10,
+    "y": 48,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "A",
+    "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+    "id": "",
+    "text": "Escolha seu Plano",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-16 mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center px-16 sm:px-0 w-full",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 items-center py-40 lg:py-[80px] px-0 sm:px-24 lg:px-0 md:pb-80 mx-auto max-w-[950px]",
+        "id": "",
+        "text": "Simule as taxas das suas vendas.\nMaquininha\nTapTon\nVendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 91,01\nParcelado 12x\n8,99%\nRecebimento da venda\n1 dia útil\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex\nEscolha seu Plano"
+      }
+    ],
+    "length": 17,
+    "y": 51,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Pra você nunca mais perder uma venda",
+    "tag": "A",
+    "class": "w-full md:w-max btn btn-primary btn-large",
+    "id": "",
+    "text": "Escolha a sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 md:mx-auto mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 py-40 lg:py-80 px-16 xl:px-0 mx-auto max-w-[1060px]",
+        "id": "",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-50",
+        "id": "pra-voce-nunca-mais-perder-uma-venda",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      }
+    ],
+    "length": 24,
+    "y": 40,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Pra você nunca mais perder uma venda"
+    ]
+  }
+]
