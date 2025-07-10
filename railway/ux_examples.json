@@ -394,5 +394,395 @@
     "contextHeadings": [
       "Pra você nunca mais perder uma venda"
     ]
+  },
+  {
+    "sessao": "Pra você nunca mais perder uma venda",
+    "tag": "A",
+    "class": "w-full md:w-max btn btn-primary btn-large",
+    "id": "",
+    "text": "Escolha a sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 md:mx-auto mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 py-40 lg:py-80 px-16 xl:px-0 mx-auto max-w-[1060px]",
+        "id": "",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-50",
+        "id": "pra-voce-nunca-mais-perder-uma-venda",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      }
+    ],
+    "length": 24,
+    "y": 40,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Pra você nunca mais perder uma venda"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "DIV",
+    "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+    "id": "",
+    "text": "Sem mínimo de vendas",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      },
+      {
+        "tag": "DIV",
+        "class": "gap-16 md:gap-y-24 justify-center flex row",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais\nTon Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      }
+    ],
+    "length": 20,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "ton-paragraph-16",
+    "id": "",
+    "text": "Maquininhas com preços super baixos",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 35,
+    "y": 11,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "B",
+    "class": "font-heading text-center text-newTon-700 ton-paragraph-28",
+    "id": "",
+    "text": "1,98%",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-4 w-full",
+        "id": "",
+        "text": "DÉBITO\n1,98%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex",
+        "id": "",
+        "text": "DÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 5,
+    "y": 12,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "INPUT",
+    "class": "",
+    "id": "planCardInput-tonsuper",
+    "text": "tonsuper",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 items-center",
+        "id": "",
+        "text": "Ton Super"
+      },
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Hero",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "SPAN",
+        "class": "flex justify-center items-center p-8 text-newTon-700 bg-display-0/80 rounded-24 cursor-pointer",
+        "id": "swiper-next-hero-carousel-images",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex absolute bottom-16 md:bottom-24 left-2/4 z-[1] gap-16 justify-center items-center mx-auto w-max translate-x-[-50%]",
+        "id": "arrow-hero-carousel",
+        "text": ""
+      }
+    ],
+    "length": 0,
+    "y": 7,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Hero",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "flex justify-center items-center p-8 text-newTon-700 bg-display-0/80 rounded-24 cursor-pointer",
+        "id": "swiper-prev-hero-carousel-images",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex absolute bottom-16 md:bottom-24 left-2/4 z-[1] gap-16 justify-center items-center mx-auto w-max translate-x-[-50%]",
+        "id": "arrow-hero-carousel",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative",
+        "id": "hero-carousel",
+        "text": "A maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ\nVem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha"
+      }
+    ],
+    "length": 0,
+    "y": 7,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Hero",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Peça já Maquininha pra MEI e PJ",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-secondary btn-large",
+        "id": "",
+        "text": "Peça já Maquininha pra MEI e PJ"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap md:order-4 gap-16 justify-center lg:justify-start w-full md:w-min max-w-[464px]",
+        "id": "",
+        "text": "Peça já Maquininha pra MEI e PJ"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:gap-24 justify-center items-center md:items-start mx-auto w-full",
+        "id": "",
+        "text": "A maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ"
+      }
+    ],
+    "length": 31,
+    "y": 6,
+    "siblingIndex": 0,
+    "contextHeadings": []
   }
 ]
