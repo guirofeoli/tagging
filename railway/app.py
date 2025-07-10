@@ -2,8 +2,6 @@ import json
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import os
-import time
-
 from git_utils import get_file_from_github, save_file_to_github
 
 app = Flask(__name__)
@@ -12,22 +10,15 @@ CORS(app, origins=["https://www.ton.com.br"], supports_credentials=True)
 EXAMPLES_FILE = "ux_examples.json"
 LABELS_FILE = "labels.json"
 VOCAB_FILE = "allWords.json"
-MODEL_FILE = "model.bin"
-USERS_FILE = "users.json"
+NUMERIC_MEANS_FILE = "numeric_means.json"
 
+# --- Helper para sincronizar todos arquivos do GitHub para o container ---
 def sync_from_github():
-    """Baixa todos os arquivos essenciais do GitHub se não existem localmente."""
-    for fname in [EXAMPLES_FILE, LABELS_FILE, VOCAB_FILE, MODEL_FILE]:
-        if not os.path.exists(fname):
-            content, _ = get_file_from_github(fname)
-            if content and fname != MODEL_FILE:
-                with open(fname, "w", encoding="utf-8") as f:
-                    f.write(content)
-            elif content and fname == MODEL_FILE:
-                # model.bin é binário!
-                import base64
-                with open(fname, "wb") as f:
-                    f.write(base64.b64decode(content))
+    for fname in [EXAMPLES_FILE, LABELS_FILE, VOCAB_FILE, NUMERIC_MEANS_FILE]:
+        content, _ = get_file_from_github(fname)
+        if content is not None:
+            with open(fname, "w", encoding="utf-8") as f:
+                f.write(content)
 
 @app.route("/", methods=["GET"])
 def health():
@@ -43,61 +34,36 @@ def debug_ls():
             out.append(p)
     return jsonify(out)
 
-@app.route("/debug_file", methods=["GET"])
-def debug_file():
-    fname = request.args.get("file")
-    login = request.args.get("login", "")
-    senha = request.args.get("senha", "")
-    if not fname or ".." in fname:
-        return "Arquivo não permitido", 400
-
-    try:
-        with open(USERS_FILE, encoding="utf-8") as f:
-            users = json.load(f)
-        valid = any(u.get("login") == login and u.get("senha") == senha for u in users)
-        if not valid:
-            return "Acesso negado!", 401
-    except Exception as e:
-        return f"Erro ao acessar users.json: {e}", 500
-
-    try:
-        with open(fname, encoding="utf-8") as f:
-            conteudo = f.read()
-        return "<pre>" + conteudo.replace("<", "&lt;") + "</pre>"
-    except Exception as e:
-        return f"Erro ao ler arquivo: {e}", 500
-
-@app.route("/get_examples", methods=["GET"])
-def get_examples():
+@app.route("/sync_from_github", methods=["POST"])
+def sync_endpoint():
     sync_from_github()
-    content, sha = get_file_from_github(EXAMPLES_FILE)
-    if not content:
-        return jsonify({"ok": True, "examples": []})
-    try:
-        data = json.loads(content)
-    except Exception:
-        data = []
-    return jsonify({"ok": True, "examples": data})
+    return jsonify({"ok": True, "msg": "Sincronizado do GitHub para local."})
 
 @app.route("/get_labels", methods=["GET"])
 def get_labels():
     sync_from_github()
-    content, sha = get_file_from_github(LABELS_FILE)
     try:
-        labels = json.loads(content) if content else []
+        with open(LABELS_FILE, "r", encoding="utf-8") as f:
+            labels = json.load(f)
         return jsonify({"ok": True if labels else False, "labels": labels})
     except Exception:
         return jsonify({"ok": False, "labels": []})
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    sync_from_github()
+    sync_from_github()  # <- sempre sincroniza antes de predizer!
     try:
         from model_predict import predict_session
         features = request.get_json()
+        print("[Auto-UX] Features recebidas:", features)
         label, score = predict_session(features)
+        print("[Auto-UX] Predição:", label, score)
         return jsonify({"ok": True, "sessao": label, "score": score})
     except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        print("[Auto-UX] ERRO no predict:", e)
+        print(tb)
         return jsonify({"ok": False, "msg": str(e)}), 500
 
 @app.route("/salvar_examples", methods=["POST"])
@@ -113,6 +79,7 @@ def salvar_examples():
             exemplos_atuais = json.loads(old_content)
         except Exception:
             exemplos_atuais = []
+
     exemplos_finais = exemplos_atuais + data
 
     status, resp = save_file_to_github(
@@ -124,23 +91,17 @@ def salvar_examples():
     if status not in (200, 201):
         return jsonify({"ok": False, "msg": "Erro ao salvar exemplos no GitHub", "resp": resp}), 500
 
-    # Treina e exporta o modelo!
     try:
-        # Salva temporário para treino local
+        import time
+        from train_ux import train_and_save_model
         with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
             json.dump(exemplos_finais, f, ensure_ascii=False, indent=2)
-        from train_ux import train_and_save_model
         train_and_save_model(EXAMPLES_FILE)
-        # Sobe arquivos do modelo pro GitHub
-        for fname in [LABELS_FILE, VOCAB_FILE, MODEL_FILE]:
-            with open(fname, "rb" if fname == MODEL_FILE else "r", encoding=None if fname == MODEL_FILE else "utf-8") as f:
-                content = f.read()
-            if fname == MODEL_FILE:
-                import base64
-                content = base64.b64encode(content).decode("utf-8")
-            _, _ = save_file_to_github(fname, content, f"Atualiza {fname}")
-        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado e exportado!"})
+        t1 = time.time()
+        print(f"[Auto-UX] Treinamento concluído.")
+        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado!"})
     except Exception as e:
+        print("[Auto-UX] ERRO no treino automático:", e)
         return jsonify({"ok": False, "msg": str(e)}), 500
 
 @app.after_request
@@ -162,6 +123,7 @@ def options_handler(path):
 def handle_error(e):
     import traceback
     tb = traceback.format_exc()
+    print("[Auto-UX] ERRO GLOBAL:", e, tb)
     resp = make_response(str(e) + "\n" + tb, 500)
     resp.headers["Access-Control-Allow-Origin"] = "https://www.ton.com.br"
     resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
