@@ -2,24 +2,11 @@ import json
 import joblib
 import numpy as np
 import os
-from git_utils import get_file_from_github
-
-def ensure_local_file(filename, as_binary=False):
-    if not os.path.isfile(filename):
-        content, _ = get_file_from_github(filename, as_binary=as_binary)
-        if content is not None:
-            mode = "wb" if as_binary else "w"
-            with open(filename, mode, encoding=None if as_binary else "utf-8") as f:
-                f.write(content if as_binary else str(content))
-
-# Garante todos arquivos necessários
-ensure_local_file("model.bin", as_binary=True)
-ensure_local_file("allWords.json")
-ensure_local_file("labels.json")
 
 _model = None
 _vocab = None
 _labels = None
+_numeric = None
 
 def extract_tokens(features):
     tokens = []
@@ -47,8 +34,10 @@ def example_to_vector(example, vocab):
     return [1 if w in tokens else 0 for w in vocab]
 
 def _load_all():
-    global _model, _vocab, _labels
+    global _model, _vocab, _labels, _numeric
     if _model is None:
+        if not os.path.exists("model.bin"):
+            raise FileNotFoundError("Arquivo 'model.bin' não encontrado (treine e exporte o modelo primeiro)!")
         _model = joblib.load("model.bin")
     if _vocab is None:
         with open("allWords.json", "r", encoding="utf-8") as f:
@@ -56,6 +45,9 @@ def _load_all():
     if _labels is None:
         with open("labels.json", "r", encoding="utf-8") as f:
             _labels = json.load(f)
+    if _numeric is None and os.path.exists("numeric_means.json"):
+        with open("numeric_means.json", "r", encoding="utf-8") as f:
+            _numeric = json.load(f)
 
 def predict_session(features):
     _load_all()
