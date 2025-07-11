@@ -4,3 +4,9 @@ numpy
 scikit-learn
 gunicorn
 flask-cors
+
+
+
+joblib
+sentence-transformers
+
