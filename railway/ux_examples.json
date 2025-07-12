@@ -3515,5 +3515,237 @@
     "y": 99,
     "siblingIndex": 4,
     "contextHeadings": []
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+    "id": "btn-term-0-day",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Sem mínimo de vendas",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Sem mínimo de vendas"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      }
+    ],
+    "length": 20,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "ton-paragraph-16",
+    "id": "",
+    "text": "Maquininhas com preços super baixos",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 35,
+    "y": 11,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "INPUT",
+    "class": "",
+    "id": "planCardInput-tonsuper",
+    "text": "tonsuper",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 items-center",
+        "id": "",
+        "text": "Ton Super"
+      },
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "A",
+    "class": "text-newTon-700 underline",
+    "id": "",
+    "text": "taxas de todos os planos",
+    "parents": [
+      {
+        "tag": "P",
+        "class": "text-center",
+        "id": "",
+        "text": "Confira as taxas de todos os planos."
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Confira as taxas de todos os planos.\n\nTaxa 0% no Pix nos primeiros 30 dias após a primeira venda com Pix na maquininha."
+      },
+      {
+        "tag": "SECTION",
+        "class": "flex flex-col gap-16 md:gap-24 items-center pt-24 pb-40 mx-auto max-w-screen-xl",
+        "id": "planos",
+        "text": "Conheça os Planos Ton\n\nRecebimento da venda\n\n1 dia útil\nNo mesmo dia\nPra vender com maquininha\nTon Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais\nTon Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas\nPra vender com o celular\nTapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais\n\nConfira as taxas de todos os planos.\n\nTaxa 0% no Pix nos primeiros 30 dias após a primeira venda com Pix na maquininha."
+      }
+    ],
+    "length": 24,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Confira as taxas de todos os planos.",
+      "Conheça os Planos Ton"
+    ]
   }
 ]
