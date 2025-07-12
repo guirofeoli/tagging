@@ -3747,5 +3747,368 @@
       "Confira as taxas de todos os planos.",
       "Conheça os Planos Ton"
     ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-0 bg-newTon-600 font-bold",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Sem mínimo de vendas",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Sem mínimo de vendas"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      }
+    ],
+    "length": 20,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "INPUT",
+    "class": "",
+    "id": "planCardInput-tonsuper",
+    "text": "tonsuper",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 items-center",
+        "id": "",
+        "text": "Ton Super"
+      },
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Taxas conforme as vendas mensais. Saiba mais",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 border-display-300 cursor-pointer w-[300px]",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      }
+    ],
+    "length": 44,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "text-newTon-700 underline outline-none",
+    "id": "",
+    "text": "Saiba mais",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "text-center ton-paragraph-12",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      }
+    ],
+    "length": 10,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Como funciona o plano TapTon?",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "ml-auto cursor-pointer",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-24 items-start",
+        "id": "",
+        "text": "Como funciona o plano TapTon?"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex overflow-y-auto relative flex-col gap-16 p-24 w-full max-h-[90%] md:max-h-full bg-white md:rounded-[16px] rounded-t-24 rounded-b-none",
+        "id": "",
+        "text": "Como funciona o plano TapTon?\n\nO primeiro mês terá taxas relativas a vendas mensais até R$ 5 mil, após esse período, você terá taxas de acordo com o valor de vendas.\n\nNo início de cada mês, são contabilizadas as suas vendas do mês anterior. Isso definirá a sua faixa de vendas e, consequentemente, as taxas do mês. Escolha o recebimento de venda no app do Ton após fazer o cadastro.\n\nTaxas válidas para o recebimento da venda: 1 dia útil\n\nVendas mensais acima de R$ 50 mil\n\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\n\nVendas mensais de R$ 5 mil a R$ 50 mil\n\nDÉBITO\n0,84%\nCRÉDITO\n2,88%\nCRÉDITO 12X\n10,11%\n\nVendas mensais até R$ 5 mil\n\nDÉBITO\n1,09%\nCRÉDITO\n2,99%\nCRÉDITO 12X\n16,99%"
+      }
+    ],
+    "length": 0,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona o plano TapTon?"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "text-newTon-700 underline outline-none",
+    "id": "",
+    "text": "Saiba mais",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "text-center ton-paragraph-12",
+        "id": "",
+        "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais"
+      }
+    ],
+    "length": 10,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Como funciona o plano Ton Pro?",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "ml-auto cursor-pointer",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-24 items-start",
+        "id": "",
+        "text": "Como funciona o plano Ton Pro?"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex overflow-y-auto relative flex-col gap-12 p-24 w-full max-h-[90%] md:max-h-full bg-white md:rounded-[16px] rounded-t-24 rounded-b-none",
+        "id": "",
+        "text": "Como funciona o plano Ton Pro?\n\nAproveite o período promocional do Ton Pro para fazer as suas primeiras vendas.\n\nPeríodo promocional\n\nTaxas válidas para o recebimento da venda: 1 dia útil\n\nVálidas durante 30 dias ou até vender 5 mil reais.\n\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nApós o período promocional\n\nVocê terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior. Isso definirá a sua faixa de vendas e, consequentemente, as taxas do mês.\n\nTaxas válidas para o recebimento da venda: 1 dia útil\n\nVendas mensais acima de R$ 2 mil\n\nDÉBITO\n1,45%\nCRÉDITO\n3,51%\nCRÉDITO 12X\n14,79%\n\nVendas mensais até R$ 2 mil\n\nDÉBITO\n1,69%\nCRÉDITO\n3,86%\nCRÉDITO 12X\n20,39%\nConfira todas as taxas e planos\nFechar"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona o plano Ton Pro?"
+    ]
   }
 ]
