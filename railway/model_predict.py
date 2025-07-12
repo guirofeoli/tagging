@@ -1,12 +1,18 @@
+# model_predict.py
 import json
 import joblib
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+from sentence_transformers import SentenceTransformer
+import base64, tarfile, io, os, shutil
 
 _model = None
 _vocab = None
 _labels = None
-_tfidf = None
-_examples_texts = None
+_tfidf_model = None
+_all_texts = None
+_bert_emb_matrix = None
+_sbert_model = None
 
 def flatten_features(example):
     text_parts = [
@@ -14,23 +20,23 @@ def flatten_features(example):
         example.get('tag',''),
         example.get('id',''),
         example.get('class',''),
-        example.get('cssPath',''),
+        example.get('selector',''),
         str(example.get('contextHeadings',[])),
     ]
     for p in example.get('parents',[]):
         text_parts.append(p.get('text',''))
-        text_parts.append(p.get('cssPath',''))
+        text_parts.append(p.get('selector',''))
     return " | ".join([str(x) for x in text_parts if x])
 
 def extract_tokens(features):
     tokens = []
-    for k in ['class', 'text', 'id', 'tag', 'cssPath', 'role', 'type', 'placeholder', 'href', 'title', 'alt']:
+    for k in ['class', 'text', 'id', 'tag', 'selector', 'role', 'type', 'placeholder', 'href', 'title', 'alt']:
         val = features.get(k, "")
         if isinstance(val, str):
             tokens += [w.lower() for w in val.split() if len(w) > 1]
     if 'parents' in features:
         for p in features['parents']:
-            for k in ['class', 'text', 'id', 'tag', 'cssPath']:
+            for k in ['class', 'text', 'id', 'tag', 'selector']:
                 val = p.get(k, "")
                 if isinstance(val, str):
                     tokens += [w.lower() for w in val.split() if len(w) > 1]
@@ -45,12 +51,32 @@ def extract_tokens(features):
     if 'clickable' in features: tokens.append(f'click{features["clickable"]}')
     return tokens
 
+def build_vocab(examples):
+    vocab = set()
+    for ex in examples:
+        tokens = extract_tokens(ex)
+        vocab.update(tokens)
+    return sorted(vocab)
+
 def example_to_vector(example, vocab):
     tokens = set(extract_tokens(example))
     return [1 if w in tokens else 0 for w in vocab]
 
+def load_sbert_base64(filename):
+    global _sbert_model
+    with open(filename, "r", encoding="utf-8") as f:
+        tar_b64 = json.load(f)["base64"]
+        tar_bytes = base64.b64decode(tar_b64)
+        tmpdir = "./sbert_tmp_model"
+        if os.path.exists(tmpdir):
+            shutil.rmtree(tmpdir)
+        with tarfile.open(fileobj=io.BytesIO(tar_bytes), mode="r:gz") as tar:
+            tar.extractall(tmpdir)
+        _sbert_model = SentenceTransformer(tmpdir + "/model")
+    return _sbert_model
+
 def _load_all():
-    global _model, _vocab, _labels, _tfidf, _examples_texts
+    global _model, _vocab, _labels, _tfidf_model, _all_texts, _bert_emb_matrix, _sbert_model
     if _model is None:
         _model = joblib.load("model.bin")
     if _vocab is None:
@@ -59,78 +85,61 @@ def _load_all():
     if _labels is None:
         with open("labels.json", "r", encoding="utf-8") as f:
             _labels = json.load(f)
-    if _tfidf is None:
-        _tfidf = joblib.load("model_tfidf.bin")
-    if _examples_texts is None:
+    if _tfidf_model is None:
+        _tfidf_model = joblib.load("model_tfidf.bin")
+    if _all_texts is None:
         with open("all_examples_texts.json", "r", encoding="utf-8") as f:
-            _examples_texts = json.load(f)
-
-def heuristics(features):
-    tag = (features.get('tag','') or '').lower()
-    y = features.get('y',0)
-    role = (features.get('role','') or '').lower()
-    headings = [h.lower() for h in features.get('contextHeadings',[])]
-    # Heurísticas rápidas!
-    if tag in ("nav",) or "menu" in features.get("id","").lower() or "menu" in features.get("class","").lower():
-        return "Menu"
-    if tag in ("footer",) or y > 80: return "Footer"
-    if tag in ("header",) or y < 18: return "Header"
-    if tag in ("main","section","article"): return "Conteúdo"
-    if role and "banner" in role: return "Banner"
-    if tag in ("h1","h2","h3","h4","h5","h6") and features.get("text",""): return "Heading"
-    for h in headings:
-        if "hero" in h: return "Hero"
-        if "menu" in h: return "Menu"
-        if "footer" in h: return "Footer"
-        if "header" in h: return "Header"
-    return None
-
-def tfidf_predict(features, labels):
-    # Similaridade textual entre features do elemento e exemplos rotulados
-    global _tfidf, _examples_texts
-    query = flatten_features(features)
-    v_query = _tfidf.transform([query])
-    v_corpus = _tfidf.transform(_examples_texts)
-    sims = np.dot(v_corpus, v_query.T).toarray().flatten()
-    idx = np.argmax(sims)
-    return labels[idx], float(sims[idx])
+            _all_texts = json.load(f)
+    if _bert_emb_matrix is None:
+        with open("bert_emb_matrix.json", "r", encoding="utf-8") as f:
+            _bert_emb_matrix = np.array(json.load(f))
+    if _sbert_model is None:
+        load_sbert_base64("sbert_model_b64.json")
 
 def predict_session(features):
     _load_all()
-    # 1. Heurísticas simples
-    h = heuristics(features)
-    if h: return h, 1.0
-
-    # 2. Random Forest
+    # RandomForest
     X = np.array([example_to_vector(features, _vocab)])
     probs = _model.predict_proba(X)[0]
     idx = int(np.argmax(probs))
     label = _labels[idx]
     score = float(probs[idx])
-    if score > 0.7:
+
+    # SBERT
+    sbert_vec = _sbert_model.encode([flatten_features(features)])[0]
+    sims_bert = cosine_similarity([sbert_vec], _bert_emb_matrix)[0]
+    idx_bert = int(np.argmax(sims_bert))
+    sim_label = _labels[idx_bert]
+    sim_score = float(sims_bert[idx_bert])
+
+    # TF-IDF Fallback
+    tfidf_test = _tfidf_model.transform([flatten_features(features)])
+    tfidf_examples = _tfidf_model.transform(_all_texts)
+    sims = cosine_similarity(tfidf_test, tfidf_examples)[0]
+    idx_tfidf = int(np.argmax(sims))
+    label_tfidf = _labels[idx_tfidf]
+    sim_score_tfidf = float(sims[idx_tfidf])
+
+    # Decision logic
+    if score >= 0.6:
         return label, score
+    elif sim_score >= 0.60:
+        return sim_label, sim_score
+    else:
+        return label_tfidf, sim_score_tfidf
 
-    # 3. Similaridade textual (TF-IDF)
-    label2, score2 = tfidf_predict(features, _labels)
-    if score2 > 0.6:
-        return label2, score2
-
-    # 4. Fallback
-    return "Outro", 0.0
-
-# Teste rápido
+# Teste manual:
 if __name__ == "__main__":
     example = {
-        "class": "menu superior",
-        "text": "Início",
-        "id": "menu-inicio",
         "tag": "A",
-        "parents": [{"tag": "NAV", "class": "navbar", "id": "nav-main", "text": ""}],
+        "class": "menu principal",
+        "id": "main-menu",
+        "text": "Início",
+        "parents": [{"tag": "NAV", "class": "nav", "id": "nav-main", "text": "Menu principal"}],
         "contextHeadings": ["Menu"],
-        "y": 8,
+        "y": 9,
         "siblingIndex": 0,
-        "cssPath": "nav#nav-main > ul.menu > li",
-        "clickable": 1
+        "selector": "nav.nav > ul > li"
     }
     label, score = predict_session(example)
     print("Label:", label, "Score:", score)
