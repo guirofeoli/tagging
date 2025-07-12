@@ -2,6 +2,7 @@ import json
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import os
+import threading
 
 from git_utils import get_file_from_github, save_file_to_github
 
@@ -15,11 +16,8 @@ NUMERIC_FILE = "numeric_means.json"
 MODEL_FILE = "model.bin"
 USERS_FILE = "users.json"
 
-# ARTEFATOS para persistir após treinamento
-ARTIFACTS = [
-    "model.bin", "model_tfidf.bin", "sbert_model_b64.json",
-    "bert_emb_matrix.json", "allWords.json", "labels.json", "all_examples_texts.json"
-]
+# Lock para evitar dois treinos simultâneos (opcional, mas recomendável)
+train_lock = threading.Lock()
 
 @app.route("/", methods=["GET"])
 def health():
@@ -135,37 +133,22 @@ def salvar_examples():
         print("[Auto-UX] ERRO ao salvar no GitHub")
         return jsonify({"ok": False, "msg": "Erro ao salvar exemplos no GitHub", "resp": resp}), 500
 
-    # --- TREINAMENTO e SALVAMENTO dos ARTEFATOS ---
-    try:
-        import time
-        print("[Auto-UX] Iniciando treinamento automático após salvar exemplos...")
-        t0 = time.time()
-        from train_ux import train_and_save_model
-        with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
-            json.dump(exemplos_finais, f, ensure_ascii=False, indent=2)
-        train_and_save_model(EXAMPLES_FILE)
-        t1 = time.time()
-        print(f"[Auto-UX] Treinamento concluído em {t1-t0:.1f}s.")
-
-        # SALVA TODOS OS ARTEFATOS NO GIT
-        for fname in ARTIFACTS:
+    # --- Treinamento em background ---
+    def train_bg():
+        with train_lock:
             try:
-                old_content, old_sha = get_file_from_github(fname)
-                with open(fname, "rb") as f:
-                    content_bytes = f.read()
-                content = content_bytes
-                if not fname.endswith(".bin"):
-                    # para JSON puro, garantir UTF-8
-                    content = content_bytes.decode("utf-8")
-                save_file_to_github(fname, content, "Atualiza artefato UX", sha=old_sha)
-                print(f"[Auto-UX] Salvo artefato {fname}")
+                print("[Auto-UX] Treinamento em background INICIADO...")
+                from train_ux import train_and_save_model
+                with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
+                    json.dump(exemplos_finais, f, ensure_ascii=False, indent=2)
+                train_and_save_model(EXAMPLES_FILE)
+                print("[Auto-UX] Treinamento em background FINALIZADO.")
             except Exception as e:
-                print(f"[Auto-UX] Falha ao salvar artefato {fname}: {e}")
+                print("[Auto-UX] ERRO no treino background:", e)
 
-        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado e artefatos salvos!"})
-    except Exception as e:
-        print("[Auto-UX] ERRO no treino automático:", e)
-        return jsonify({"ok": False, "msg": str(e)}), 500
+    threading.Thread(target=train_bg, daemon=True).start()
+    print("[Auto-UX] Treinamento iniciado em background.")
+    return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Treinamento em background!"})
 
 @app.after_request
 def add_cors_headers(response):
