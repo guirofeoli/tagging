@@ -2,7 +2,6 @@ import json
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import os
-import threading
 
 from git_utils import get_file_from_github, save_file_to_github
 
@@ -12,12 +11,9 @@ CORS(app, origins=["https://www.ton.com.br"], supports_credentials=True)
 EXAMPLES_FILE = "ux_examples.json"
 LABELS_FILE = "labels.json"
 VOCAB_FILE = "allWords.json"
-NUMERIC_FILE = "numeric_means.json"
 MODEL_FILE = "model.bin"
+TFIDF_FILE = "model_tfidf.bin"
 USERS_FILE = "users.json"
-
-# Lock para evitar dois treinos simultâneos (opcional, mas recomendável)
-train_lock = threading.Lock()
 
 @app.route("/", methods=["GET"])
 def health():
@@ -133,22 +129,40 @@ def salvar_examples():
         print("[Auto-UX] ERRO ao salvar no GitHub")
         return jsonify({"ok": False, "msg": "Erro ao salvar exemplos no GitHub", "resp": resp}), 500
 
-    # --- Treinamento em background ---
-    def train_bg():
-        with train_lock:
-            try:
-                print("[Auto-UX] Treinamento em background INICIADO...")
-                from train_ux import train_and_save_model
-                with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
-                    json.dump(exemplos_finais, f, ensure_ascii=False, indent=2)
-                train_and_save_model(EXAMPLES_FILE)
-                print("[Auto-UX] Treinamento em background FINALIZADO.")
-            except Exception as e:
-                print("[Auto-UX] ERRO no treino background:", e)
+    try:
+        import time
+        print("[Auto-UX] Iniciando treinamento automático após salvar exemplos...")
+        t0 = time.time()
+        from train_ux import train_and_save_model
+        with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
+            json.dump(exemplos_finais, f, ensure_ascii=False, indent=2)
+        train_and_save_model(EXAMPLES_FILE)
+        t1 = time.time()
+        print(f"[Auto-UX] Treinamento concluído em {t1-t0:.1f}s.")
+        return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado!"})
+    except Exception as e:
+        print("[Auto-UX] ERRO no treino automático:", e)
+        return jsonify({"ok": False, "msg": str(e)}), 500
 
-    threading.Thread(target=train_bg, daemon=True).start()
-    print("[Auto-UX] Treinamento iniciado em background.")
-    return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Treinamento em background!"})
+@app.route("/force_train", methods=["POST"])
+def force_train():
+    print("[Auto-UX] /force_train chamado (re-treina do zero com exemplos do GitHub)")
+    try:
+        # Busca os exemplos atualizados do GitHub
+        examples_content, _ = get_file_from_github(EXAMPLES_FILE)
+        if not examples_content:
+            return jsonify({"ok": False, "msg": "Sem exemplos no GitHub"})
+        with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
+            f.write(examples_content.decode("utf-8"))
+
+        # Treina e sobrescreve os modelos .bin no backend
+        from train_ux import train_and_save_model
+        train_and_save_model(EXAMPLES_FILE)
+        print("[Auto-UX] Treinamento via /force_train concluído")
+        return jsonify({"ok": True, "msg": "Modelo re-treinado com sucesso!"})
+    except Exception as e:
+        print("[Auto-UX] ERRO no force_train:", e)
+        return jsonify({"ok": False, "msg": str(e)}), 500
 
 @app.after_request
 def add_cors_headers(response):
