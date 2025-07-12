@@ -1,9 +1,13 @@
-import json, os
+# train_ux.py
+import json
+import os
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
+from sentence_transformers import SentenceTransformer
+import tempfile, shutil, tarfile, io, base64
 
 def flatten_features(example):
     # Junta textos relevantes, ids, tags, headings, cssPath, parents para similarity
@@ -12,23 +16,23 @@ def flatten_features(example):
         example.get('tag',''),
         example.get('id',''),
         example.get('class',''),
-        example.get('cssPath',''),
+        example.get('selector',''),
         str(example.get('contextHeadings',[])),
     ]
     for p in example.get('parents',[]):
         text_parts.append(p.get('text',''))
-        text_parts.append(p.get('cssPath',''))
+        text_parts.append(p.get('selector',''))
     return " | ".join([str(x) for x in text_parts if x])
 
 def extract_tokens(features):
     tokens = []
-    for k in ['class', 'text', 'id', 'tag', 'cssPath', 'role', 'type', 'placeholder', 'href', 'title', 'alt']:
+    for k in ['class', 'text', 'id', 'tag', 'selector', 'role', 'type', 'placeholder', 'href', 'title', 'alt']:
         val = features.get(k, "")
         if isinstance(val, str):
             tokens += [w.lower() for w in val.split() if len(w) > 1]
     if 'parents' in features:
         for p in features['parents']:
-            for k in ['class', 'text', 'id', 'tag', 'cssPath']:
+            for k in ['class', 'text', 'id', 'tag', 'selector']:
                 val = p.get(k, "")
                 if isinstance(val, str):
                     tokens += [w.lower() for w in val.split() if len(w) > 1]
@@ -62,6 +66,7 @@ def train_and_save_model(json_path="ux_examples.json"):
         raise Exception("Nenhum exemplo rotulado encontrado!")
     print(f"[Auto-UX] {len(examples)} exemplos carregados.")
 
+    # RandomForest
     vocab = build_vocab(examples)
     print(f"[Auto-UX] Vocab extraído: {len(vocab)} tokens.")
     X = [example_to_vector(ex, vocab) for ex in examples]
@@ -75,12 +80,29 @@ def train_and_save_model(json_path="ux_examples.json"):
     clf.fit(X, y)
     print("[Auto-UX] Modelo RF treinado!")
 
-    # Treina TF-IDF para similaridade textual
+    # TF-IDF
     texts = [flatten_features(ex) for ex in examples]
     tfidf = TfidfVectorizer().fit(texts)
     print("[Auto-UX] TF-IDF treinado!")
 
-    # Salva modelos/artefatos
+    # SBERT embeddings
+    print("[Auto-UX] Gerando embeddings BERT...")
+    sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+    emb_matrix = sbert_model.encode(texts, show_progress_bar=False)
+    with open("bert_emb_matrix.json", "w", encoding="utf-8") as f:
+        json.dump(emb_matrix.tolist(), f)
+
+    # Salva SBERT como base64 tar.gz
+    with tempfile.TemporaryDirectory() as tmpdir:
+        sbert_model.save(tmpdir)
+        tar_bytes = io.BytesIO()
+        with tarfile.open(fileobj=tar_bytes, mode='w:gz') as tar:
+            tar.add(tmpdir, arcname="model")
+        tar_b64 = base64.b64encode(tar_bytes.getvalue()).decode()
+        with open("sbert_model_b64.json", "w", encoding="utf-8") as f:
+            json.dump({"base64": tar_b64}, f)
+
+    # Persiste tudo
     joblib.dump(clf, "model.bin")
     joblib.dump(tfidf, "model_tfidf.bin")
     with open("allWords.json", "w", encoding="utf-8") as f:
@@ -89,7 +111,7 @@ def train_and_save_model(json_path="ux_examples.json"):
         json.dump(list(label_encoder.classes_), f, ensure_ascii=False)
     with open("all_examples_texts.json", "w", encoding="utf-8") as f:
         json.dump(texts, f, ensure_ascii=False)
-    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos)!")
+    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos, embeddings, sbert-model)!")
 
 if __name__ == "__main__":
     train_and_save_model()
