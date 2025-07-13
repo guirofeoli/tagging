@@ -288,5 +288,656 @@
     "y": 24,
     "siblingIndex": 4,
     "contextHeadings": []
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-0 bg-newTon-600 font-bold",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Hero",
+    "tag": "A",
+    "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-secondary btn-large",
+    "id": "",
+    "text": "Peça já Maquininha pra MEI e PJ",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap md:order-4 gap-16 justify-center lg:justify-start w-full md:w-min max-w-[464px]",
+        "id": "",
+        "text": "Peça já Maquininha pra MEI e PJ"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:gap-24 justify-center items-center md:items-start mx-auto w-full",
+        "id": "",
+        "text": "A maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ"
+      },
+      {
+        "tag": "DIV",
+        "class": "max-w-[1200px] mx-auto flex flex-col md:flex-row gap-24 lg:gap-40 md:items-center",
+        "id": "",
+        "text": "A maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ"
+      }
+    ],
+    "length": 31,
+    "y": 5,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Hero",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "flex justify-center items-center p-8 text-newTon-700 bg-display-0/80 rounded-24 cursor-pointer",
+        "id": "swiper-prev-hero-carousel-images",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex absolute bottom-16 md:bottom-24 left-2/4 z-[1] gap-16 justify-center items-center mx-auto w-max translate-x-[-50%]",
+        "id": "arrow-hero-carousel",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative",
+        "id": "hero-carousel",
+        "text": "Vem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha\nA maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ"
+      }
+    ],
+    "length": 0,
+    "y": 7,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Taxas conforme as vendas mensais. Saiba mais",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      }
+    ],
+    "length": 44,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "text-newTon-700 underline outline-none",
+    "id": "",
+    "text": "Saiba mais",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "text-center ton-paragraph-12",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      }
+    ],
+    "length": 10,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Como funciona o plano TapTon?",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "ml-auto cursor-pointer",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-24 items-start",
+        "id": "",
+        "text": "Como funciona o plano TapTon?"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex overflow-y-auto relative flex-col gap-16 p-24 w-full max-h-[90%] md:max-h-full bg-white md:rounded-[16px] rounded-t-24 rounded-b-none",
+        "id": "",
+        "text": "Como funciona o plano TapTon?\n\nO primeiro mês terá taxas relativas a vendas mensais até R$ 5 mil, após esse período, você terá taxas de acordo com o valor de vendas.\n\nNo início de cada mês, são contabilizadas as suas vendas do mês anterior. Isso definirá a sua faixa de vendas e, consequentemente, as taxas do mês. Escolha o recebimento de venda no app do Ton após fazer o cadastro.\n\nTaxas válidas para o recebimento da venda: 1 dia útil\n\nVendas mensais acima de R$ 50 mil\n\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\n\nVendas mensais de R$ 5 mil a R$ 50 mil\n\nDÉBITO\n0,84%\nCRÉDITO\n2,88%\nCRÉDITO 12X\n10,11%\n\nVendas mensais até R$ 5 mil\n\nDÉBITO\n1,09%\nCRÉDITO\n2,99%\nCRÉDITO 12X\n16,99%"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona o plano TapTon?"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "DIV",
+    "class": "flex flex-col gap-4 w-full",
+    "id": "",
+    "text": "DÉBITO\n0,75%",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex",
+        "id": "",
+        "text": "DÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%"
+      }
+    ],
+    "length": 12,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "TapTon",
+    "tag": "BUTTON",
+    "class": "hidden lg:block w-full font-bold btn btn-primary btn-large",
+    "id": "",
+    "text": "Venda pelo celular agora",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "mt-8",
+        "id": "",
+        "text": "Venda pelo celular agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8 w-full",
+        "id": "",
+        "text": "TapTon\nGrátis\n\nBaixe o App e comece a vender\n\nVenda pelo celular agora"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex relative flex-col gap-24 p-24 mx-auto mt-[72px] w-[308px] rounded-md",
+        "id": "",
+        "text": "TapTon\nGrátis\n\nBaixe o App e comece a vender\n\nVenda pelo celular agora\n\nVenda na hora pelo App Ton\n\nParcele em até 12x\n\nAceite débito e crédito por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com Link, Pix e Boleto"
+      }
+    ],
+    "length": 24,
+    "y": 20,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "TapTon"
+    ]
+  },
+  {
+    "sessao": "modal baixe o app do ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": " flex absolute top-24 md:top-40 right-24 md:right-40 justify-center items-center p-8 md:w-40 md:h-40 bg-display-100 rounded-full",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex relative flex-col justify-center items-center p-24 md:p-40 xs:ml-auto w-full max-w-[480px] h-full bg-display-0 md:rounded-tl-2xl transition-all transform-gpu translate-x-0",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      },
+      {
+        "tag": "DIV",
+        "class": "fixed z-[10000] top-0 overflow-hidden h-screen bg-display-900 bg-opacity-25 w-screen",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      }
+    ],
+    "length": 0,
+    "y": 12,
+    "siblingIndex": 0,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "whatsapp",
+    "tag": "A",
+    "class": "btn btn-large p-16 md:px-24 font-bold flex gap-8  styles_WhatsappButton__NuAlP",
+    "id": "button-whatsapp",
+    "text": "Peça no WhatsApp",
+    "parents": [
+      {
+        "tag": "MAIN",
+        "class": "__variable_677050 __variable_98c803 font-default",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!\n\nPeça no WhatsApp\n\nCupom de 5% de desconto aplicado ao carrinho\n\nMaquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora\nDESCONTO ESPECIAL acaba em:\n3\ndias\n:\n10\nhoras\n:\n17\nminutos\n:\n19\nsegundos\nA maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ\nVem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha\nConheça os Planos Ton\n\nRecebimento da venda\n\n1 dia útil\nNo mesmo dia\nPra vender com maquininha\nTon Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais\nTon Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas\nPra vender com o celular\nTapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais\n\nConfira as taxas de todos os planos.\n\nTaxa 0% no Pix nos primeiros 30 dias após a primeira venda com Pix na maquininha.\n\nAceite cartão no seu celular\n\nVocê pode vender com TapTon e lucrar ainda mais usando também a maquininha.\nSeu celular precisa ter conexão NFC. Disponível para Android (10.0 ou superior) e iOS (iPhone XS ou superior / iOS 17 ou superior)\n\nTapTon\nGrátis\n\nBaixe o App e comece a vender\n\nVenda pelo celular agora\n\nVenda na hora pelo App Ton\n\nParcele em até 12x\n\nAceite débito e crédito por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com Link, Pix e Boleto\n\nAceite as principais formas de pagamento\nPra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha\nSimule as taxas das suas vendas.\nMaquininha\nTapTon\nVendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 91,01\nParcelado 12x\n8,99%\nRecebimento da venda\n1 dia útil\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex\nEscolha seu Plano\n\nSó no TapTon a taxa é baixa de verdade\n\nVenda de qualquer lugar direto do celular\n\nOnde e quando precisar, é só vender, com aquilo que não sai do seu bolso: o seu celular\n\nVenda com o TapTon\nConheça o TapTon\nMuito além da maquininha\n\nPix na Maquininha\n\nSuper Conta Ton\n\nRenda Ton\n\nCartão de Crédito e Débito\n\nBaú do Ton\n\nNão perca nenhuma venda, receba Pix na Maquininha Ton\n\nPor QR Code ou aproximação, receba os pagamentos na hora via Pix e gere comprovantes, é mais segurança pra você e pro seu cliente.\n\nVenda mais com Pix\nVeja mais sobre Pix\nDescubra porquê nossos\nclientes amam o Ton:\n\nDiego Belleboni\n\nVendeu com o TapTon\n\n”Em uma venda que precisei fazer de emergência, onde minha maquininha estava sem bateria, fiz a instalação do TapTon e na hora já consegui efetuar a venda, que maravilha.”\n\nAndréia\n\nVendeu com a Maquininha Ton\n\n\"A máquina é muito boa, todas as vezes que precisei em relação a algum problema com a máquina, os funcionários me atenderam com a maior satisfação. Na minha opinião isso só acontece pelo jeito como a empresa trata os funcionários.\"\n\nSimone Viana\n\nUtilizou o suporte do Ton\n\n\"Encantados! É assim que nos sentimos. Mais do que o fornecimento de serviços competente e eficiente. O suporte no dia a dia, o atendimento cuidadoso e carinhoso, o respeito ao cliente, faz com que tenhamos a certeza que essa é uma parceria de verdade!\"\n\nAna Paula Pereira Alves\n\nVendeu com o TapTon\n\n”Muito seguro, recomendo e as taxas são as melhores”\n\nEverton\n\nVendeu com a Maquininha Ton\n\n\"No início não aceitava cartões e cheguei até a perder alguns clientes mas com a aceitação de cartão consegui resgatá-los e também conquistar novos clientes. Tudo transparente e suporte ao cliente resolve tudo com facilidade.\"\n\nMarleide Santos\n\nVendeu com o TapTon\n\n”Amei a facilidade do APP, e o dinheiro cai em um dia útil, maravilhoso.”\n\nMaria Lígia\n\nUtilizou o suporte do Ton\n\n\"Desde o início o serviço me surpreendeu pela rapidez no atendimento e por notar que as pessoas que me atendiam sabiam o que estavam fazendo! E o principal! Nada mudou com o decorrer dos meses, continuo muito satisfeita.\"\n\nEduardo Cerqueira\n\nVendeu com o TapTon\n\n”Muito bom poder usar meu celular como máquina de cartão, e poder receber de qualquer lugar que vc esteja !!”\n\nSueli\n\nUtilizou o suporte do Ton\n\n\"Apesar das coisas serem tão difíceis ao longo da vida aqui nós nos sentimos próximos. Temos acesso às pessoas. Eu amo minha maquininha, por que eu tenho apoio. GRATIDÃO!\"\n\nPor que o Ton é diferente?\nTroca grátis e garantia vitalícia\n\nTrocamos a sua maquininha sem você precisar sair de casa\n\nAqui sua Maquininha não tem aluguel\n\nCom o Ton você tem máquina de qualidade sem pesar no bolso\n\nGuarde e veja seu dinheiro render\n\nSó no Baú do Ton seu dinheiro guardado, rende 100% CDI\n\nTodas as funções em um único cartão\n\nTenha acesso a débito, crédito e crédito mais limite em um só cartão\n\nAs melhores taxas do mercado\n\nO Ton tem as melhores disponíveis, a partir de 0,74%\n\nSuporte 24h, pronto pra te ajudar\n\nAssistente virtual e uma equipe especializada para te atender\n\nAqui você não precisa de banco\n\nConta digital grátis para você receber o seu dinheiro\n\nJá viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton\nFicou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha\n\nMAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS\n\nTON\nSTONE\nPAGAR.ME\n\nv1.118.0"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "id": "__next",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!\n\nPeça no WhatsApp\n\nCupom de 5% de desconto aplicado ao carrinho\n\nMaquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora\nDESCONTO ESPECIAL acaba em:\n3\ndias\n:\n10\nhoras\n:\n17\nminutos\n:\n19\nsegundos\nA maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ\nVem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha\nConheça os Planos Ton\n\nRecebimento da venda\n\n1 dia útil\nNo mesmo dia\nPra vender com maquininha\nTon Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais\nTon Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas\nPra vender com o celular\nTapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais\n\nConfira as taxas de todos os planos.\n\nTaxa 0% no Pix nos primeiros 30 dias após a primeira venda com Pix na maquininha.\n\nAceite cartão no seu celular\n\nVocê pode vender com TapTon e lucrar ainda mais usando também a maquininha.\nSeu celular precisa ter conexão NFC. Disponível para Android (10.0 ou superior) e iOS (iPhone XS ou superior / iOS 17 ou superior)\n\nTapTon\nGrátis\n\nBaixe o App e comece a vender\n\nVenda pelo celular agora\n\nVenda na hora pelo App Ton\n\nParcele em até 12x\n\nAceite débito e crédito por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com Link, Pix e Boleto\n\nAceite as principais formas de pagamento\nPra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha\nSimule as taxas das suas vendas.\nMaquininha\nTapTon\nVendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 91,01\nParcelado 12x\n8,99%\nRecebimento da venda\n1 dia útil\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex\nEscolha seu Plano\n\nSó no TapTon a taxa é baixa de verdade\n\nVenda de qualquer lugar direto do celular\n\nOnde e quando precisar, é só vender, com aquilo que não sai do seu bolso: o seu celular\n\nVenda com o TapTon\nConheça o TapTon\nMuito além da maquininha\n\nPix na Maquininha\n\nSuper Conta Ton\n\nRenda Ton\n\nCartão de Crédito e Débito\n\nBaú do Ton\n\nNão perca nenhuma venda, receba Pix na Maquininha Ton\n\nPor QR Code ou aproximação, receba os pagamentos na hora via Pix e gere comprovantes, é mais segurança pra você e pro seu cliente.\n\nVenda mais com Pix\nVeja mais sobre Pix\nDescubra porquê nossos\nclientes amam o Ton:\n\nDiego Belleboni\n\nVendeu com o TapTon\n\n”Em uma venda que precisei fazer de emergência, onde minha maquininha estava sem bateria, fiz a instalação do TapTon e na hora já consegui efetuar a venda, que maravilha.”\n\nAndréia\n\nVendeu com a Maquininha Ton\n\n\"A máquina é muito boa, todas as vezes que precisei em relação a algum problema com a máquina, os funcionários me atenderam com a maior satisfação. Na minha opinião isso só acontece pelo jeito como a empresa trata os funcionários.\"\n\nSimone Viana\n\nUtilizou o suporte do Ton\n\n\"Encantados! É assim que nos sentimos. Mais do que o fornecimento de serviços competente e eficiente. O suporte no dia a dia, o atendimento cuidadoso e carinhoso, o respeito ao cliente, faz com que tenhamos a certeza que essa é uma parceria de verdade!\"\n\nAna Paula Pereira Alves\n\nVendeu com o TapTon\n\n”Muito seguro, recomendo e as taxas são as melhores”\n\nEverton\n\nVendeu com a Maquininha Ton\n\n\"No início não aceitava cartões e cheguei até a perder alguns clientes mas com a aceitação de cartão consegui resgatá-los e também conquistar novos clientes. Tudo transparente e suporte ao cliente resolve tudo com facilidade.\"\n\nMarleide Santos\n\nVendeu com o TapTon\n\n”Amei a facilidade do APP, e o dinheiro cai em um dia útil, maravilhoso.”\n\nMaria Lígia\n\nUtilizou o suporte do Ton\n\n\"Desde o início o serviço me surpreendeu pela rapidez no atendimento e por notar que as pessoas que me atendiam sabiam o que estavam fazendo! E o principal! Nada mudou com o decorrer dos meses, continuo muito satisfeita.\"\n\nEduardo Cerqueira\n\nVendeu com o TapTon\n\n”Muito bom poder usar meu celular como máquina de cartão, e poder receber de qualquer lugar que vc esteja !!”\n\nSueli\n\nUtilizou o suporte do Ton\n\n\"Apesar das coisas serem tão difíceis ao longo da vida aqui nós nos sentimos próximos. Temos acesso às pessoas. Eu amo minha maquininha, por que eu tenho apoio. GRATIDÃO!\"\n\nPor que o Ton é diferente?\nTroca grátis e garantia vitalícia\n\nTrocamos a sua maquininha sem você precisar sair de casa\n\nAqui sua Maquininha não tem aluguel\n\nCom o Ton você tem máquina de qualidade sem pesar no bolso\n\nGuarde e veja seu dinheiro render\n\nSó no Baú do Ton seu dinheiro guardado, rende 100% CDI\n\nTodas as funções em um único cartão\n\nTenha acesso a débito, crédito e crédito mais limite em um só cartão\n\nAs melhores taxas do mercado\n\nO Ton tem as melhores disponíveis, a partir de 0,74%\n\nSuporte 24h, pronto pra te ajudar\n\nAssistente virtual e uma equipe especializada para te atender\n\nAqui você não precisa de banco\n\nConta digital grátis para você receber o seu dinheiro\n\nJá viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton\nFicou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha\n\nMAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS\n\nTON\nSTONE\nPAGAR.ME\n\nv1.118.0"
+      },
+      {
+        "tag": "BODY",
+        "class": "",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!\n\nPeça no WhatsApp\n\nCupom de 5% de desconto aplicado ao carrinho\n\nMaquininhas\nSoluções\nPlanos e Taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o App\nPedir Agora\nDESCONTO ESPECIAL acaba em:\n3\ndias\n:\n10\nhoras\n:\n17\nminutos\n:\n19\nsegundos\nA maquininha mais barata do Brasil pra quem é MEI e PJ\n\nSer MEI e PJ não é fácil, mas você também não precisa pagar caro por isso. No Ton pensamos em quem empreende de verdade.\n\nPeça já Maquininha pra MEI e PJ\nVem pro Arraiá do Ton: até 72% de desconto nas maquininhas\n\nA melhor máquina de cartão pra você vender rápido e receber todo o dinheiro no mesmo dia na Conta Ton. Tudo que o seu negócio precisa em um só app.\n\nPeça já sua maquininha\nConheça os Planos Ton\n\nRecebimento da venda\n\n1 dia útil\nNo mesmo dia\nPra vender com maquininha\nTon Pro\nVenda mais e pague menos taxas a cada mês\nDÉBITO\n0,74%\nCRÉDITO\n0,74%\nCRÉDITO 12X\n8,99%\nTaxas promocionais válidas durante 30 dias ou até vender 5 mil reais. Saiba mais\nTon Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas\nPra vender com o celular\nTapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais\n\nConfira as taxas de todos os planos.\n\nTaxa 0% no Pix nos primeiros 30 dias após a primeira venda com Pix na maquininha.\n\nAceite cartão no seu celular\n\nVocê pode vender com TapTon e lucrar ainda mais usando também a maquininha.\nSeu celular precisa ter conexão NFC. Disponível para Android (10.0 ou superior) e iOS (iPhone XS ou superior / iOS 17 ou superior)\n\nTapTon\nGrátis\n\nBaixe o App e comece a vender\n\nVenda pelo celular agora\n\nVenda na hora pelo App Ton\n\nParcele em até 12x\n\nAceite débito e crédito por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com Link, Pix e Boleto\n\nAceite as principais formas de pagamento\nPra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha\nSimule as taxas das suas vendas.\nMaquininha\nTapTon\nVendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 91,01\nParcelado 12x\n8,99%\nRecebimento da venda\n1 dia útil\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex\nEscolha seu Plano\n\nSó no TapTon a taxa é baixa de verdade\n\nVenda de qualquer lugar direto do celular\n\nOnde e quando precisar, é só vender, com aquilo que não sai do seu bolso: o seu celular\n\nVenda com o TapTon\nConheça o TapTon\nMuito além da maquininha\n\nPix na Maquininha\n\nSuper Conta Ton\n\nRenda Ton\n\nCartão de Crédito e Débito\n\nBaú do Ton\n\nNão perca nenhuma venda, receba Pix na Maquininha Ton\n\nPor QR Code ou aproximação, receba os pagamentos na hora via Pix e gere comprovantes, é mais segurança pra você e pro seu cliente.\n\nVenda mais com Pix\nVeja mais sobre Pix\nDescubra porquê nossos\nclientes amam o Ton:\n\nDiego Belleboni\n\nVendeu com o TapTon\n\n”Em uma venda que precisei fazer de emergência, onde minha maquininha estava sem bateria, fiz a instalação do TapTon e na hora já consegui efetuar a venda, que maravilha.”\n\nAndréia\n\nVendeu com a Maquininha Ton\n\n\"A máquina é muito boa, todas as vezes que precisei em relação a algum problema com a máquina, os funcionários me atenderam com a maior satisfação. Na minha opinião isso só acontece pelo jeito como a empresa trata os funcionários.\"\n\nSimone Viana\n\nUtilizou o suporte do Ton\n\n\"Encantados! É assim que nos sentimos. Mais do que o fornecimento de serviços competente e eficiente. O suporte no dia a dia, o atendimento cuidadoso e carinhoso, o respeito ao cliente, faz com que tenhamos a certeza que essa é uma parceria de verdade!\"\n\nAna Paula Pereira Alves\n\nVendeu com o TapTon\n\n”Muito seguro, recomendo e as taxas são as melhores”\n\nEverton\n\nVendeu com a Maquininha Ton\n\n\"No início não aceitava cartões e cheguei até a perder alguns clientes mas com a aceitação de cartão consegui resgatá-los e também conquistar novos clientes. Tudo transparente e suporte ao cliente resolve tudo com facilidade.\"\n\nMarleide Santos\n\nVendeu com o TapTon\n\n”Amei a facilidade do APP, e o dinheiro cai em um dia útil, maravilhoso.”\n\nMaria Lígia\n\nUtilizou o suporte do Ton\n\n\"Desde o início o serviço me surpreendeu pela rapidez no atendimento e por notar que as pessoas que me atendiam sabiam o que estavam fazendo! E o principal! Nada mudou com o decorrer dos meses, continuo muito satisfeita.\"\n\nEduardo Cerqueira\n\nVendeu com o TapTon\n\n”Muito bom poder usar meu celular como máquina de cartão, e poder receber de qualquer lugar que vc esteja !!”\n\nSueli\n\nUtilizou o suporte do Ton\n\n\"Apesar das coisas serem tão difíceis ao longo da vida aqui nós nos sentimos próximos. Temos acesso às pessoas. Eu amo minha maquininha, por que eu tenho apoio. GRATIDÃO!\"\n\nPor que o Ton é diferente?\nTroca grátis e garantia vitalícia\n\nTrocamos a sua maquininha sem você precisar sair de casa\n\nAqui sua Maquininha não tem aluguel\n\nCom o Ton você tem máquina de qualidade sem pesar no bolso\n\nGuarde e veja seu dinheiro render\n\nSó no Baú do Ton seu dinheiro guardado, rende 100% CDI\n\nTodas as funções em um único cartão\n\nTenha acesso a débito, crédito e crédito mais limite em um só cartão\n\nAs melhores taxas do mercado\n\nO Ton tem as melhores disponíveis, a partir de 0,74%\n\nSuporte 24h, pronto pra te ajudar\n\nAssistente virtual e uma equipe especializada para te atender\n\nAqui você não precisa de banco\n\nConta digital grátis para você receber o seu dinheiro\n\nJá viu que o Ton é o parceiro ideal pra quem tá no corre, né? E aí, partiu vender mais?\nEscolha seu Plano\nAbra sua Conta Ton\nFicou alguma dúvida?\nComo funciona a taxa única de adesão do Ton?\n\nNão temos mensalidade! Você paga a taxa apenas ao aderir uma das máquinas em modelo de comodato, tendo direito a garantia enquanto durar nossa parceria.\n\nA adesão da máquina pode ser paga à vista ou parcelada em até 12 vezes no cartão de crédito. Após este pagamento, não haverá cobrança fixa (aluguel) pelo uso da máquina.\n\nO cadastro no aplicativo é gratuito e dá direito a utilização de funções como o link de pagamento. Você só paga a taxa única se optar por adquirir uma maquininha.\n\nComo receberei o valor das minhas vendas?\n\nO valor das vendas estarão disponíveis em sua carteira no prazo escolhido para o recebimento, podendo ser de 1 dia útil ou no mesmo dia.\n\nDepois disso você poderá transferir para sua conta bancária cadastrada, sem custos, ou para o seu cartão de débito (disponível apenas para pessoa física).\n\nImportante: para transferir o saldo disponível é necessário que a conta bancária seja de mesma titularidade do CNPJ ou CPF cadastrado no aplicativo Ton.\n\nTipos de contas bancárias aceitas para transferência:\n\nConta Corrente (exceto conta salário);\nConta Poupança;\nConta Corrente Conjunta;\nConta Poupança Conjunta.\nComo funciona o recebimento no mesmo dia?\n\nAntecipação em até 4 horas para transações efetuadas entre 06:00 e 20:59, horário de Brasília, na Super Conta Ton (consulte transações elegíveis, condições e disponibilidade). Válida para todos os planos, modelos de maquininhas e TapTon (Tap on Phone).\n\nCondição aplicável à clientes que possuam a Super Conta Ton ativa e sem contratos de cessão ou garantia com instituições terceiras. Consulte mais detalhes em www.ton.com.br/receba-no-mesmo-dia\n\nO Pix QR Code ou Pix por Aproximação na máquina cobra taxa?\n\nSe você quer enviar ou receber dinheiro usando uma chave Pix pelo App, não há cobranças de taxas e o dinheiro cai na hora.\nExemplo: Se você precisa pagar um fornecedor, é só solicitar a chave dele e a transferência será gratuita.\n\nJá para vender com Pix QR Code ou Pix por Aproximação nas maquininhas Ton, a taxa funciona da seguinte forma: são 30 dias gratuitos e depois 0,99%. Seu dinheiro cai na hora e você concentra todas as vendas do seu negócio em um único App. Mais fácil para se organizar. As maquininhas que fazem esse tipo de venda hoje são a T2, T3 e a T3 smart. Para usar dessa função é preciso ter uma chave Pix cadastrada na Conta Ton.\n\nQual é o prazo de entrega da minha maquininha?\n\nO prazo de entrega das nossas maquininhas pode variar de acordo com o modelo escolhido. Confira o prazo de entrega da sua maquininha direto no carrinho e no resumo do seu pedido.\n\nO cartão de débito, se solicitado no aplicativo, é enviado separadamente e entregue em até 20 dias úteis.\n\nComo funcionam os planos das maquininhas do Ton?\n\nNo plano Ton Pro, você tem as melhores taxas do mercado em todas as faixas de venda. Além disso, você terá taxas promocionais durante 30 dias ou até atingir R$ 5 mil reais em vendas. Quanto mais você vender, mais conseguirá abaixar suas taxas.\n\nApós o período promocional, você terá taxas de acordo com suas vendas mensais. No início de cada mês, são contabilizadas as suas vendas do mês anterior e isso definirá suas taxas.\n\nNo plano Ton Super, as maquininhas têm preços mais baratos e as taxas não mudam de acordo com as suas vendas mensais.\n\nAs taxas se aplicam a vendas no link de pagamento e a todas as vendas na maquininha, exceto Pix QR Code.\n\nConfira todas as taxas e planos.\n\nIr para a Central de Ajuda\nEscolha sua maquininha\n\nMAQUININHAS\n\nMaquininha T3 Smart\nMaquininha T3\nMaquininha T2\nMaquininha T1\nCompare as maquininhas\n\nSOLUÇÕES\n\nSuper Conta Ton\nBaú do Ton\nTapTon\nTap to Pay no iPhone\nLink de Pagamento\nPix na Maquininha\nReceba no mesmo dia\nCartão de Crédito e Débito\nSeguros Ton\nLimite de conta\nCapital de Giro\n\nTON\n\nPlanos e taxas\nTon pro MEI e PJ\nSeja um consultor\nBlog\nBaixe o Aplicativo\nCentral de ajuda\nAtendimento por WhatsApp\n\nINSTITUCIONAL\n\nPolítica de Privacidade\nPortal de Privacidade\nPolítica de Cookies\nPreferências de Cookies\nTermos e Condições de uso do Ton\nPolítica Institucional de PLD-FTP\n\nONDE ESTAMOS\n\nAv. Rebouças, 2880, 2º andar, Pinheiros, CEP 05.402-500 – São Paulo/SP\n\nCNPJ: 18.727.053/0001-74\n\nNOSSOS PRÊMIOS\n\nTON\nSTONE\nPAGAR.ME\n\nv1.118.0"
+      }
+    ],
+    "length": 16,
+    "y": 30,
+    "siblingIndex": 4,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Pra você nunca mais perder uma venda",
+    "tag": "A",
+    "class": "w-full md:w-max btn btn-primary btn-large",
+    "id": "",
+    "text": "Escolha a sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 md:mx-auto mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 py-40 lg:py-80 px-16 xl:px-0 mx-auto max-w-[1060px]",
+        "id": "",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-50",
+        "id": "pra-voce-nunca-mais-perder-uma-venda",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      }
+    ],
+    "length": 24,
+    "y": 39,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Pra você nunca mais perder uma venda"
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between text-14",
+    "id": "dropdown-select-promotion-tier",
+    "text": "Acima de R$ 50 mil",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "Acima de R$ 50 mil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 lg:p-40 w-full lg:border-r",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon"
+      }
+    ],
+    "length": 18,
+    "y": 44,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "B",
+    "class": "paragraph-18 transition-all font-medium text-display-700",
+    "id": "",
+    "text": "Maquininha",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "py-12 px-16 rounded-t-[8px] transition-all whitespace-nowrap w-auto bg-transparent border-display-400 border border-b-0",
+        "id": "btn-newcalc-maquininha",
+        "text": "Maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-nowrap gap-8",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "overflow-x-auto w-full",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      }
+    ],
+    "length": 10,
+    "y": 42,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "LI",
+    "class": "flex justify-center items-center py-12 px-8 w-full last:rounded-r-8 first:rounded-l-8 border cursor-pointer text-display-900 font-medium",
+    "id": "",
+    "text": "Super",
+    "parents": [
+      {
+        "tag": "UL",
+        "class": "flex",
+        "id": "",
+        "text": "Pro\nSuper"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:p-24 lg:p-40 w-full md:border-r",
+        "id": "",
+        "text": "Selecione seu Plano Ton:\nPro\nSuper\nVendas Mensais\nPeríodo Promocional\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o Ton Pro"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-24 md:gap-0 md:items-center md:p-0 px-24 pt-24 pb-40 w-full bg-display-0 rounded-16 rounded-tl-none shadow-sm",
+        "id": "",
+        "text": "Selecione seu Plano Ton:\nPro\nSuper\nVendas Mensais\nPeríodo Promocional\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o Ton Pro\nVocê recebe\nR$ 91,01\nTaxa Pro Parcelado 12x\nTaxa válida durante 30 dias ou até atingir R$ 5 mil em vendas\n8,99%\nRecebimento da venda\n1 dia útil\nVocê economiza até R$ 15,60 em relação aos concorrentes"
+      }
+    ],
+    "length": 5,
+    "y": 44,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Escolha seu Plano",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-16 mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center px-16 sm:px-0 w-full",
+        "id": "",
+        "text": "Escolha seu Plano"
+      }
+    ],
+    "length": 17,
+    "y": 51,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Venda de qualquer lugar direto do celular",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Venda com o TapTon",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+        "id": "",
+        "text": "Venda com o TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap gap-16 justify-center md:justify-start mt-24",
+        "id": "",
+        "text": "Venda com o TapTon\nConheça o TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "mt-auto",
+        "id": "",
+        "text": "Venda com o TapTon\nConheça o TapTon"
+      }
+    ],
+    "length": 18,
+    "y": 57,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Onde e quando precisar, é só vender, com aquilo que não sai do seu bolso: o seu celular",
+      "Venda de qualquer lugar direto do celular"
+    ]
+  },
+  {
+    "sessao": "modal baixe o app do ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": " flex absolute top-24 md:top-40 right-24 md:right-40 justify-center items-center p-8 md:w-40 md:h-40 bg-display-100 rounded-full",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex relative flex-col justify-center items-center p-24 md:p-40 xs:ml-auto w-full max-w-[480px] h-full bg-display-0 md:rounded-tl-2xl transition-all transform-gpu translate-x-0",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      },
+      {
+        "tag": "DIV",
+        "class": "fixed z-[10000] top-0 overflow-hidden h-screen bg-display-900 bg-opacity-25 w-screen",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      }
+    ],
+    "length": 0,
+    "y": 50,
+    "siblingIndex": 0,
+    "contextHeadings": []
   }
 ]
