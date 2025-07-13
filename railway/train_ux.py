@@ -1,3 +1,4 @@
+# train_ux.py
 import json
 import os
 import numpy as np
@@ -7,7 +8,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 from sentence_transformers import SentenceTransformer
 import tempfile, shutil, tarfile, io, base64
-from git_utils import save_file_to_github
+
+from git_utils import save_file_to_github, get_file_from_github
 
 def flatten_features(example):
     text_parts = [
@@ -58,22 +60,24 @@ def example_to_vector(example, vocab):
     return [1 if w in tokens else 0 for w in vocab]
 
 def upload_artifacts_to_github(artifacts):
-    for fname in artifacts:
+    # Upload de todos artefatos relevantes (textos como str, binários como base64 e is_binary=True)
+    for fname, meta in artifacts.items():
         try:
-            is_bin = fname.endswith('.bin') or fname.endswith('.gz') or fname.endswith('.tar')
-            mode = "rb" if is_bin else "r"
-            if mode == "rb":
-                with open(fname, "rb") as f:
-                    content = f.read()
-                b64_content = base64.b64encode(content).decode("utf-8")
-            else:
-                with open(fname, "r", encoding="utf-8") as f:
-                    content = f.read()
-                b64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+            print(f"[Auto-UX] Enviando {fname} para o GitHub...")
+            old_content, old_sha = get_file_from_github(fname)
+            content = meta['content']
+            commit_msg = meta.get('commit_msg', f"Atualiza {fname}")
+            is_binary = meta.get('is_binary', False)
+            # Se for bytes, sempre envia como binário/base64
+            if isinstance(content, bytes):
+                content = base64.b64encode(content).decode("utf-8")
+                is_binary = True
             status, resp = save_file_to_github(
-                fname, b64_content, f"Atualiza artefato {fname}", is_base64=True
+                fname, content, commit_msg, sha=old_sha, is_binary=is_binary
             )
             print(f"[Auto-UX] Upload {fname}: status {status}")
+            if status not in (200, 201):
+                print(f"[Auto-UX] Falha ao enviar {fname}: {resp}")
         except Exception as e:
             print(f"[Auto-UX] ERRO ao enviar {fname} para o GitHub: {e}")
 
@@ -85,18 +89,17 @@ def train_and_save_model(json_path="ux_examples.json"):
         raise Exception("Nenhum exemplo rotulado encontrado!")
     print(f"[Auto-UX] {len(examples)} exemplos carregados.")
 
-    # Remover duplicados
+    # Remove duplicados (caso existam)
     seen = set()
-    unique = []
-    for e in examples:
-        fs = json.dumps(e, sort_keys=True)
-        if fs not in seen:
-            seen.add(fs)
-            unique.append(e)
-    examples = unique
+    uniques = []
+    for ex in examples:
+        as_str = json.dumps(ex, sort_keys=True)
+        if as_str not in seen:
+            seen.add(as_str)
+            uniques.append(ex)
+    examples = uniques
     print(f"[Auto-UX] {len(examples)} exemplos após remover duplicados.")
 
-    # RandomForest
     vocab = build_vocab(examples)
     print(f"[Auto-UX] Vocab extraído: {len(vocab)} tokens.")
     X = [example_to_vector(ex, vocab) for ex in examples]
@@ -110,7 +113,7 @@ def train_and_save_model(json_path="ux_examples.json"):
     clf.fit(X, y)
     print("[Auto-UX] Modelo RF treinado!")
 
-    # TF-IDF
+    # TF-IDF para similaridade textual
     texts = [flatten_features(ex) for ex in examples]
     tfidf = TfidfVectorizer().fit(texts)
     print("[Auto-UX] TF-IDF treinado!")
@@ -122,7 +125,7 @@ def train_and_save_model(json_path="ux_examples.json"):
     with open("bert_emb_matrix.json", "w", encoding="utf-8") as f:
         json.dump(emb_matrix.tolist(), f)
 
-    # Salva SBERT como base64 tar.gz
+    # Salva SBERT como base64 tar.gz (como string base64)
     with tempfile.TemporaryDirectory() as tmpdir:
         sbert_model.save(tmpdir)
         tar_bytes = io.BytesIO()
@@ -132,7 +135,7 @@ def train_and_save_model(json_path="ux_examples.json"):
         with open("sbert_model_b64.json", "w", encoding="utf-8") as f:
             json.dump({"base64": tar_b64}, f)
 
-    # Persiste tudo local
+    # Salva artefatos localmente
     joblib.dump(clf, "model.bin")
     joblib.dump(tfidf, "model_tfidf.bin")
     with open("allWords.json", "w", encoding="utf-8") as f:
@@ -143,11 +146,17 @@ def train_and_save_model(json_path="ux_examples.json"):
         json.dump(texts, f, ensure_ascii=False)
     print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos, embeddings, sbert-model)!")
 
-    # Faz upload seguro para o GitHub (binários e texto)
-    upload_artifacts_to_github([
-        "model.bin", "model_tfidf.bin", "allWords.json", "labels.json", 
-        "all_examples_texts.json", "bert_emb_matrix.json", "sbert_model_b64.json"
-    ])
+    # Prepara conteúdo para upload no GitHub
+    artifacts = {
+        "model.bin": {"content": open("model.bin", "rb").read(), "is_binary": True},
+        "model_tfidf.bin": {"content": open("model_tfidf.bin", "rb").read(), "is_binary": True},
+        "allWords.json": {"content": open("allWords.json", "r", encoding="utf-8").read(), "is_binary": False},
+        "labels.json": {"content": open("labels.json", "r", encoding="utf-8").read(), "is_binary": False},
+        "all_examples_texts.json": {"content": open("all_examples_texts.json", "r", encoding="utf-8").read(), "is_binary": False},
+        "bert_emb_matrix.json": {"content": open("bert_emb_matrix.json", "r", encoding="utf-8").read(), "is_binary": False},
+        "sbert_model_b64.json": {"content": open("sbert_model_b64.json", "r", encoding="utf-8").read(), "is_binary": False},
+    }
+    upload_artifacts_to_github(artifacts)
 
 if __name__ == "__main__":
     train_and_save_model()
