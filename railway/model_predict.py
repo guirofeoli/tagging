@@ -1,11 +1,10 @@
+# model_predict.py
 import json
 import joblib
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 import base64, tarfile, io, os, shutil
-
-from git_utils import get_file_from_github
 
 _model = None
 _vocab = None
@@ -14,28 +13,6 @@ _tfidf_model = None
 _all_texts = None
 _bert_emb_matrix = None
 _sbert_model = None
-
-# Lista dos artefatos
-ARTIFACTS = [
-    "model.bin", "model_tfidf.bin", "allWords.json", "labels.json", 
-    "all_examples_texts.json", "bert_emb_matrix.json", "sbert_model_b64.json"
-]
-
-def ensure_artifacts():
-    for fname in ARTIFACTS:
-        if not os.path.exists(fname):
-            print(f"[Auto-UX] Artefato ausente local: {fname} - baixando do GitHub")
-            content, _ = get_file_from_github(fname)
-            if content:
-                mode = "wb" if fname.endswith(".bin") else "w"
-                if mode == "wb":
-                    with open(fname, "wb") as f:
-                        f.write(content)
-                else:
-                    with open(fname, "w", encoding="utf-8") as f:
-                        f.write(content.decode("utf-8"))
-            else:
-                print(f"[Auto-UX] Falha ao baixar {fname} do GitHub!")
 
 def flatten_features(example):
     text_parts = [
@@ -99,7 +76,6 @@ def load_sbert_base64(filename):
     return _sbert_model
 
 def _load_all():
-    ensure_artifacts()
     global _model, _vocab, _labels, _tfidf_model, _all_texts, _bert_emb_matrix, _sbert_model
     if _model is None:
         _model = joblib.load("model.bin")
@@ -126,23 +102,42 @@ def predict_session(features):
     X = np.array([example_to_vector(features, _vocab)])
     probs = _model.predict_proba(X)[0]
     idx = int(np.argmax(probs))
-    label = _labels[idx]
-    score = float(probs[idx])
+    # Defensive check:
+    if not _labels:
+        print("[Auto-UX] WARNING: labels.json vazio, retornando 'Não rotulado'")
+        return "Não rotulado", 0.0
+    if idx >= len(_labels):
+        print(f"[Auto-UX] WARNING: Índice de predição RF ({idx}) fora do range do labels ({len(_labels)})")
+        label = _labels[0]
+        score = float(probs[0])
+    else:
+        label = _labels[idx]
+        score = float(probs[idx])
 
     # SBERT
     sbert_vec = _sbert_model.encode([flatten_features(features)])[0]
     sims_bert = cosine_similarity([sbert_vec], _bert_emb_matrix)[0]
     idx_bert = int(np.argmax(sims_bert))
-    sim_label = _labels[idx_bert]
-    sim_score = float(sims_bert[idx_bert])
+    if idx_bert >= len(_labels):
+        print(f"[Auto-UX] WARNING: Índice SBERT ({idx_bert}) fora do range dos labels ({len(_labels)})")
+        sim_label = _labels[0]
+        sim_score = float(sims_bert[0])
+    else:
+        sim_label = _labels[idx_bert]
+        sim_score = float(sims_bert[idx_bert])
 
     # TF-IDF Fallback
     tfidf_test = _tfidf_model.transform([flatten_features(features)])
     tfidf_examples = _tfidf_model.transform(_all_texts)
     sims = cosine_similarity(tfidf_test, tfidf_examples)[0]
     idx_tfidf = int(np.argmax(sims))
-    label_tfidf = _labels[idx_tfidf]
-    sim_score_tfidf = float(sims[idx_tfidf])
+    if idx_tfidf >= len(_labels):
+        print(f"[Auto-UX] WARNING: Índice TFIDF ({idx_tfidf}) fora do range dos labels ({len(_labels)})")
+        label_tfidf = _labels[0]
+        sim_score_tfidf = float(sims[0])
+    else:
+        label_tfidf = _labels[idx_tfidf]
+        sim_score_tfidf = float(sims[idx_tfidf])
 
     # Decision logic
     if score >= 0.6:
@@ -152,6 +147,7 @@ def predict_session(features):
     else:
         return label_tfidf, sim_score_tfidf
 
+# Teste manual:
 if __name__ == "__main__":
     example = {
         "tag": "A",
