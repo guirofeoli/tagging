@@ -4642,5 +4642,297 @@
     "contextHeadings": [
       "Como funciona o plano TapTon?"
     ]
+  },
+  {
+    "sessao": "escolha sua maquininha",
+    "tag": "A",
+    "class": "mt-16 w-full font-bold capitalize bg-newTon-400 btn btn-primary btn-large",
+    "id": "btn-pedir-maquininha-T2",
+    "text": "Pedir T2 Ton Pro",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "px-16 md:px-24 mt-[24px]",
+        "id": "",
+        "text": "T2 Ton Pro\n\nR$ 106,29\n\nR$ 56,32\n\nà vista ou\n\n12x\n\nR$\n\n4\n\n,69\n\nPedir T2 Ton Pro"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-0 rounded-2xl shadow-new !h-full",
+        "id": "",
+        "text": "44\n%\nDE DESCONTO\nT2 Ton Pro\n\nR$ 106,29\n\nR$ 56,32\n\nà vista ou\n\n12x\n\nR$\n\n4\n\n,69\n\nPedir T2 Ton Pro\n\nFrete e troca grátis pra todo o Brasil\n\nCom Chip 3G e Wi-Fi\n\nReceba por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com TapTon, Link e Pix\n\nAceite Pix na Maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "swiper-slide pt-[60px] sm:pt-[50px] max-w-[263px] md:max-w-[308px] !h-auto",
+        "id": "",
+        "text": "44\n%\nDE DESCONTO\nT2 Ton Pro\n\nR$ 106,29\n\nR$ 56,32\n\nà vista ou\n\n12x\n\nR$\n\n4\n\n,69\n\nPedir T2 Ton Pro\n\nFrete e troca grátis pra todo o Brasil\n\nCom Chip 3G e Wi-Fi\n\nReceba por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com TapTon, Link e Pix\n\nAceite Pix na Maquininha"
+      }
+    ],
+    "length": 16,
+    "y": 20,
+    "siblingIndex": 2,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "escolha sua maquininha",
+    "tag": "A",
+    "class": "mt-16 w-full font-bold capitalize bg-newTon-400 btn btn-primary btn-large",
+    "id": "btn-pedir-maquininha-T1",
+    "text": "Pedir T1 Ton Pro",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "px-16 md:px-24 mt-[24px]",
+        "id": "",
+        "text": "T1 Ton Pro\n\nR$ 56,57\n\nR$ 28,12\n\nà vista ou\n\n12x\n\nR$\n\n2\n\n,34\n\nPedir T1 Ton Pro"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-0 rounded-2xl shadow-new !h-full",
+        "id": "",
+        "text": "47\n%\nDE DESCONTO\nT1 Ton Pro\n\nR$ 56,57\n\nR$ 28,12\n\nà vista ou\n\n12x\n\nR$\n\n2\n\n,34\n\nPedir T1 Ton Pro\n\nFrete e troca grátis pra todo o Brasil\n\nPrecisa de celular com internet\n\nReceba por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com TapTon, Link e Pix"
+      },
+      {
+        "tag": "DIV",
+        "class": "swiper-slide pt-[60px] sm:pt-[50px] max-w-[263px] md:max-w-[308px] !h-auto",
+        "id": "",
+        "text": "47\n%\nDE DESCONTO\nT1 Ton Pro\n\nR$ 56,57\n\nR$ 28,12\n\nà vista ou\n\n12x\n\nR$\n\n2\n\n,34\n\nPedir T1 Ton Pro\n\nFrete e troca grátis pra todo o Brasil\n\nPrecisa de celular com internet\n\nReceba por aproximação (NFC)\n\nComprovante por SMS\n\nVenda pelo App com TapTon, Link e Pix"
+      }
+    ],
+    "length": 16,
+    "y": 20,
+    "siblingIndex": 2,
+    "contextHeadings": []
+  },
+  {
+    "sessao": "Pra você nunca mais perder uma venda",
+    "tag": "A",
+    "class": "w-full md:w-max btn btn-primary btn-large",
+    "id": "",
+    "text": "Escolha a sua maquininha",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-16 md:mx-auto mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 lg:gap-40 py-40 lg:py-80 px-16 xl:px-0 mx-auto max-w-[1060px]",
+        "id": "",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      },
+      {
+        "tag": "DIV",
+        "class": "bg-display-50",
+        "id": "pra-voce-nunca-mais-perder-uma-venda",
+        "text": "Pra você nunca mais perder uma venda\nVenda na Maquininha ou no celular\n\nEsqueceu a maquininha em casa? Venda em qualquer lugar usando seu celular com o TapTon, Pix ou Link de Pagamento\n\nReceba no mesmo dia\n\nEscolha no app como prefere receber as suas vendas\n\nNão precisa ter CNPJ\n\nAinda não tem uma empresa? O Ton é pra todos: PF, PJ ou MEI\n\nGarantia ilimitada\n\nTrocas e manutenção grátis. Se preocupe só em vender\n\nChip com internet ilimitada e grátis\n\nSem nenhum custo mensal adicional no seu bolso\n\nEscolha a sua maquininha"
+      }
+    ],
+    "length": 24,
+    "y": 41,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Pra você nunca mais perder uma venda"
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "B",
+    "class": "paragraph-18 transition-all font-medium text-display-700",
+    "id": "",
+    "text": "TapTon",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "py-12 px-16 rounded-t-[8px] transition-all whitespace-nowrap w-auto bg-transparent border-display-400 border border-b-0",
+        "id": "btn-newcalc-tapton",
+        "text": "TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-nowrap gap-8",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "overflow-x-auto w-full",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      }
+    ],
+    "length": 6,
+    "y": 44,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "LABEL",
+    "class": "font-medium paragraph-16",
+    "id": "",
+    "text": "Recebimento da Venda",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da Venda\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 lg:p-40 w-full lg:border-r",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\nNo mesmo dia\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-24 lg:gap-0 md:items-center lg:p-0 px-24 pt-24 pb-40 w-full bg-display-0 rounded-16 rounded-tl-none shadow-sm",
+        "id": "",
+        "text": "Vendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\nNo mesmo dia\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 90,01\nParcelado 12x\n9,99%\nRecebimento da venda\nNo mesmo dia\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex"
+      }
+    ],
+    "length": 20,
+    "y": 48,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between ton-paragraph-16",
+    "id": "dropdown-select-receiving",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "id": "",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da Venda\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 48,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "A",
+    "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+    "id": "",
+    "text": "Escolha seu Plano",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-16 mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center px-16 sm:px-0 w-full",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-24 items-center py-40 lg:py-[80px] px-0 sm:px-24 lg:px-0 md:pb-80 mx-auto max-w-[950px]",
+        "id": "",
+        "text": "Simule as taxas das suas vendas.\nMaquininha\nTapTon\nVendas Mensais\nAcima de R$ 50 mil\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\nNo mesmo dia\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o TapTon\nVocê recebe\nR$ 90,01\nParcelado 12x\n9,99%\nRecebimento da venda\nNo mesmo dia\nTaxas pra todos os dispositivos, Android e iOS. Para os dispositivos iOS, estão disponíveis apenas as bandeiras MasterCard, Visa e Amex\nEscolha seu Plano"
+      }
+    ],
+    "length": 17,
+    "y": 51,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Venda de qualquer lugar direto do celular",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Venda com o TapTon",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "btn w-full md:w-auto font-semibold whitespace-nowrap btn-primary btn-large",
+        "id": "",
+        "text": "Venda com o TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-row flex-wrap lg:flex-nowrap gap-16 justify-center md:justify-start mt-24",
+        "id": "",
+        "text": "Venda com o TapTon\nConheça o TapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "mt-auto",
+        "id": "",
+        "text": "Venda com o TapTon\nConheça o TapTon"
+      }
+    ],
+    "length": 18,
+    "y": 57,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Onde e quando precisar, é só vender, com aquilo que não sai do seu bolso: o seu celular",
+      "Venda de qualquer lugar direto do celular"
+    ]
+  },
+  {
+    "sessao": "modal baixe o app do ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": " flex absolute top-24 md:top-40 right-24 md:right-40 justify-center items-center p-8 md:w-40 md:h-40 bg-display-100 rounded-full",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex relative flex-col justify-center items-center p-24 md:p-40 xs:ml-auto w-full max-w-[480px] h-full bg-display-0 md:rounded-tl-2xl transition-all transform-gpu translate-x-0",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      },
+      {
+        "tag": "DIV",
+        "class": "fixed z-[10000] top-0 overflow-hidden h-screen bg-display-900 bg-opacity-25 w-screen",
+        "id": "",
+        "text": "Baixe o App do Ton e abra sua conta grátis\n\nCom a câmera do seu celular aberta, escaneie o QR Code acima e baixe o app Ton. Abra sua conta grátis e comece a vender!"
+      }
+    ],
+    "length": 0,
+    "y": 50,
+    "siblingIndex": 0,
+    "contextHeadings": []
   }
 ]
