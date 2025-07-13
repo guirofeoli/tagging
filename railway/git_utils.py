@@ -19,6 +19,9 @@ def get_file_from_github(filename):
         content = base64.b64decode(data["content"])
         sha = data["sha"]
         return content, sha
+    elif resp.status_code == 404:
+        # 404 = não existe ainda. Não é erro!
+        return None, None
     else:
         print(f"[git_utils] Falha ao baixar {filename}: {resp.status_code} {resp.text}")
         return None, None
@@ -29,12 +32,11 @@ def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json"
     }
-
     if is_binary:
         if isinstance(content, bytes):
             b64_content = base64.b64encode(content).decode("utf-8")
         else:
-            b64_content = content  # Assume já está em base64
+            b64_content = content  # Assume já está base64
         payload = {
             "message": commit_msg,
             "content": b64_content,
@@ -58,5 +60,4 @@ def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False
     try:
         return resp.status_code, resp.json()
     except Exception:
-        print(f"[git_utils] Falha ao enviar {filename}: {resp.status_code} {resp.text}")
         return resp.status_code, {}
