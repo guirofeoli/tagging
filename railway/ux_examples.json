@@ -1397,5 +1397,501 @@
     "contextHeadings": [
       "Conheça os Planos Ton"
     ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "No mesmo dia",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 12,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-0 bg-newTon-600 font-bold",
+        "id": "btn-term-0-day",
+        "text": "No mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "",
+    "id": "",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-900 bg-display-100",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 10,
+    "y": 9,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "svg",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "BUTTON",
+        "class": "flex gap-8 items-center p-8 text-16 leading-24 rounded-16 text-display-0 bg-newTon-600 font-bold",
+        "id": "btn-term-1-day",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 p-8 bg-display-100 rounded-24",
+        "id": "",
+        "text": "1 dia útil\nNo mesmo dia"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-wrap gap-8 justify-center items-center w-full undefined",
+        "id": "",
+        "text": "Recebimento da venda\n\n1 dia útil\nNo mesmo dia"
+      }
+    ],
+    "length": 0,
+    "y": 9,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "DIV",
+    "class": "w-full",
+    "id": "",
+    "text": "Ton Super\nMaquininhas com preços super baixos",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 45,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "IMG",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "max-w-[64px]",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-12 py-16 h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%"
+      }
+    ],
+    "length": 0,
+    "y": 11,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Ton Super",
+    "tag": "H5",
+    "class": "\n                        font-heading text-24 leading-36 font-bold\n                        text-display-900\n                      ",
+    "id": "",
+    "text": "Ton Super",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 items-center",
+        "id": "",
+        "text": "Ton Super"
+      },
+      {
+        "tag": "DIV",
+        "class": "w-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-8 px-16",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos"
+      }
+    ],
+    "length": 9,
+    "y": 11,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Ton Super",
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "SPAN",
+    "class": "text-center ton-paragraph-12",
+    "id": "",
+    "text": "Sem mínimo de vendas",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Sem mínimo de vendas"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      },
+      {
+        "tag": "LABEL",
+        "class": "flex overflow-hidden flex-col rounded-16 border-2 cursor-pointer w-[300px] border-newTon-600",
+        "id": "",
+        "text": "Ton Super\nMaquininhas com preços super baixos\nDÉBITO\n1,98%\nCRÉDITO\n4,98%\nCRÉDITO 12X\n22,59%\nSem mínimo de vendas"
+      }
+    ],
+    "length": 20,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Conheça os Planos Ton",
+    "tag": "BUTTON",
+    "class": "text-newTon-700 underline outline-none",
+    "id": "",
+    "text": "Saiba mais",
+    "parents": [
+      {
+        "tag": "SPAN",
+        "class": "text-center ton-paragraph-12",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center items-center py-8 px-4 bg-display-100 min-h-[52px]",
+        "id": "",
+        "text": "Taxas conforme as vendas mensais. Saiba mais"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col h-full",
+        "id": "",
+        "text": "TapTon\nMáquina de cartão grátis no celular\nDÉBITO\n0,75%\nCRÉDITO\n2,69%\nCRÉDITO 12X\n8,99%\nTaxas conforme as vendas mensais. Saiba mais"
+      }
+    ],
+    "length": 10,
+    "y": 13,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Conheça os Planos Ton"
+    ]
+  },
+  {
+    "sessao": "Como funciona o plano TapTon?",
+    "tag": "use",
+    "class": "",
+    "id": "",
+    "text": "",
+    "parents": [
+      {
+        "tag": "svg",
+        "class": "",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "ml-auto cursor-pointer",
+        "id": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-24 items-start",
+        "id": "",
+        "text": "Como funciona o plano TapTon?"
+      }
+    ],
+    "length": 0,
+    "y": 10,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Como funciona o plano TapTon?"
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "LI",
+    "class": "flex justify-center items-center py-12 px-8 w-full last:rounded-r-8 first:rounded-l-8 border cursor-pointer text-newTon-700 font-bold border-newTon-700",
+    "id": "",
+    "text": "Super",
+    "parents": [
+      {
+        "tag": "UL",
+        "class": "flex",
+        "id": "",
+        "text": "Pro\nSuper"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:p-24 lg:p-40 w-full md:border-r",
+        "id": "",
+        "text": "Selecione seu Plano Ton:\nPro\nSuper\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nVeja como funciona o Ton Super"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col md:flex-row gap-24 md:gap-0 md:items-center md:p-0 px-24 pt-24 pb-40 w-full bg-display-0 rounded-16 rounded-tl-none shadow-sm",
+        "id": "",
+        "text": "Selecione seu Plano Ton:\nPro\nSuper\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nVeja como funciona o Ton Super\nVocê recebe\nR$ 77,41\nTaxa Super Parcelado 12x\n22,59%\nRecebimento da venda\n1 dia útil\nVocê economiza até R$ 2,00 em relação aos concorrentes"
+      }
+    ],
+    "length": 5,
+    "y": 45,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "SPAN",
+    "class": "ton-paragraph-16",
+    "id": "",
+    "text": "Pro",
+    "parents": [
+      {
+        "tag": "LI",
+        "class": "flex justify-center items-center py-12 px-8 w-full last:rounded-r-8 first:rounded-l-8 border cursor-pointer text-display-900 font-medium",
+        "id": "",
+        "text": "Pro"
+      },
+      {
+        "tag": "UL",
+        "class": "flex",
+        "id": "",
+        "text": "Pro\nSuper"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-16 md:p-24 lg:p-40 w-full md:border-r",
+        "id": "",
+        "text": "Selecione seu Plano Ton:\nPro\nSuper\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nVeja como funciona o Ton Super"
+      }
+    ],
+    "length": 3,
+    "y": 46,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "py-12 px-16 rounded-t-[8px] transition-all whitespace-nowrap w-auto bg-transparent border-display-400 border border-b-0",
+    "id": "btn-newcalc-tapton",
+    "text": "TapTon",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "flex flex-nowrap gap-8",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "overflow-x-auto w-full",
+        "id": "",
+        "text": "Maquininha\nTapTon"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col w-full md:w-auto",
+        "id": "",
+        "text": "Maquininha\nTapTon\nSelecione seu Plano Ton:\nPro\nSuper\nVendas Mensais\nPeríodo Promocional\nBandeiras\nMasterCard e Visa\nTipo da Venda\nParcelado 12x\nRecebimento da Venda\n1 dia útil\nValor da Venda\nTaxas de acordo com as vendas mensais. Veja como funciona o Ton Pro\nVocê recebe\nR$ 91,01\nTaxa Pro Parcelado 12x\nTaxa válida durante 30 dias ou até atingir R$ 5 mil em vendas\n8,99%\nRecebimento da venda\n1 dia útil\nVocê economiza até R$ 15,60 em relação aos concorrentes"
+      }
+    ],
+    "length": 6,
+    "y": 43,
+    "siblingIndex": 1,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "BUTTON",
+    "class": "flex flex-row gap-6 justify-center w-[max-content] font-bold paragraph-16 dropdown-button font-medium whitespace-nowrap !w-full !justify-between ton-paragraph-16",
+    "id": "dropdown-select-receiving",
+    "text": "1 dia útil",
+    "parents": [
+      {
+        "tag": "DIV",
+        "class": "inline-block relative cursor-pointer !border border-[0.1rem] border-display-400 flex flex-1 rounded-8 p-12 w-full bg-display-0",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "id": "",
+        "text": "1 dia útil"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex flex-col gap-8",
+        "id": "",
+        "text": "Recebimento da Venda\n1 dia útil"
+      }
+    ],
+    "length": 10,
+    "y": 48,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
+  },
+  {
+    "sessao": "Simule as taxas das suas vendas.",
+    "tag": "SPAN",
+    "class": "flex gap-8 justify-center items-center w-full",
+    "id": "",
+    "text": "Escolha seu Plano",
+    "parents": [
+      {
+        "tag": "A",
+        "class": "btn whitespace-nowrap btn-primary btn-large flex order-2 md:order-3 w-full md:w-max font-bold",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex gap-16 mt-24 w-full md:w-max",
+        "id": "",
+        "text": "Escolha seu Plano"
+      },
+      {
+        "tag": "DIV",
+        "class": "flex justify-center px-16 sm:px-0 w-full",
+        "id": "",
+        "text": "Escolha seu Plano"
+      }
+    ],
+    "length": 17,
+    "y": 51,
+    "siblingIndex": 0,
+    "contextHeadings": [
+      "Simule as taxas das suas vendas."
+    ]
   }
 ]
