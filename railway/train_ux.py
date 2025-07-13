@@ -7,7 +7,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 from sentence_transformers import SentenceTransformer
 import tempfile, shutil, tarfile, io, base64
-
 from git_utils import save_file_to_github
 
 def flatten_features(example):
@@ -61,15 +60,18 @@ def example_to_vector(example, vocab):
 def upload_artifacts_to_github(artifacts):
     for fname in artifacts:
         try:
-            mode = "rb" if fname.endswith(".bin") else "r"
+            is_bin = fname.endswith('.bin') or fname.endswith('.gz') or fname.endswith('.tar')
+            mode = "rb" if is_bin else "r"
             if mode == "rb":
                 with open(fname, "rb") as f:
                     content = f.read()
+                b64_content = base64.b64encode(content).decode("utf-8")
             else:
                 with open(fname, "r", encoding="utf-8") as f:
                     content = f.read()
+                b64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
             status, resp = save_file_to_github(
-                fname, content, f"Atualiza artefato {fname}"
+                fname, b64_content, f"Atualiza artefato {fname}", is_base64=True
             )
             print(f"[Auto-UX] Upload {fname}: status {status}")
         except Exception as e:
@@ -83,15 +85,15 @@ def train_and_save_model(json_path="ux_examples.json"):
         raise Exception("Nenhum exemplo rotulado encontrado!")
     print(f"[Auto-UX] {len(examples)} exemplos carregados.")
 
-    # Remove duplicados (pelo hash do objeto json)
+    # Remover duplicados
     seen = set()
-    filtered = []
-    for ex in examples:
-        j = json.dumps(ex, sort_keys=True)
-        if j not in seen:
-            filtered.append(ex)
-            seen.add(j)
-    examples = filtered
+    unique = []
+    for e in examples:
+        fs = json.dumps(e, sort_keys=True)
+        if fs not in seen:
+            seen.add(fs)
+            unique.append(e)
+    examples = unique
     print(f"[Auto-UX] {len(examples)} exemplos após remover duplicados.")
 
     # RandomForest
@@ -130,7 +132,7 @@ def train_and_save_model(json_path="ux_examples.json"):
         with open("sbert_model_b64.json", "w", encoding="utf-8") as f:
             json.dump({"base64": tar_b64}, f)
 
-    # Persiste tudo
+    # Persiste tudo local
     joblib.dump(clf, "model.bin")
     joblib.dump(tfidf, "model_tfidf.bin")
     with open("allWords.json", "w", encoding="utf-8") as f:
@@ -139,14 +141,13 @@ def train_and_save_model(json_path="ux_examples.json"):
         json.dump(list(label_encoder.classes_), f, ensure_ascii=False)
     with open("all_examples_texts.json", "w", encoding="utf-8") as f:
         json.dump(texts, f, ensure_ascii=False)
-    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos, embeddings, sbert-model, métricas)!")
+    print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos, embeddings, sbert-model)!")
 
-    # **Upload para o GitHub**
-    artifacts = [
+    # Faz upload seguro para o GitHub (binários e texto)
+    upload_artifacts_to_github([
         "model.bin", "model_tfidf.bin", "allWords.json", "labels.json", 
         "all_examples_texts.json", "bert_emb_matrix.json", "sbert_model_b64.json"
-    ]
-    upload_artifacts_to_github(artifacts)
+    ])
 
 if __name__ == "__main__":
     train_and_save_model()
