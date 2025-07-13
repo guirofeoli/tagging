@@ -1,18 +1,23 @@
-import json, os
+import json
+import os
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import accuracy_score, confusion_matrix
-import joblib, hashlib
+import joblib
 from sentence_transformers import SentenceTransformer
-import tempfile, tarfile, io, base64
+import tempfile, shutil, tarfile, io, base64
+
+from git_utils import save_file_to_github
 
 def flatten_features(example):
     text_parts = [
-        example.get('text',''), example.get('tag',''), example.get('id',''),
-        example.get('class',''), example.get('selector',''),
-        str(example.get('contextHeadings',[]))
+        example.get('text',''),
+        example.get('tag',''),
+        example.get('id',''),
+        example.get('class',''),
+        example.get('selector',''),
+        str(example.get('contextHeadings',[])),
     ]
     for p in example.get('parents',[]):
         text_parts.append(p.get('text',''))
@@ -53,15 +58,22 @@ def example_to_vector(example, vocab):
     tokens = set(extract_tokens(example))
     return [1 if w in tokens else 0 for w in vocab]
 
-def remove_duplicates(examples):
-    seen = set()
-    unique = []
-    for ex in examples:
-        h = hashlib.sha256(json.dumps(ex, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
-        if h not in seen:
-            seen.add(h)
-            unique.append(ex)
-    return unique
+def upload_artifacts_to_github(artifacts):
+    for fname in artifacts:
+        try:
+            mode = "rb" if fname.endswith(".bin") else "r"
+            if mode == "rb":
+                with open(fname, "rb") as f:
+                    content = f.read()
+            else:
+                with open(fname, "r", encoding="utf-8") as f:
+                    content = f.read()
+            status, resp = save_file_to_github(
+                fname, content, f"Atualiza artefato {fname}"
+            )
+            print(f"[Auto-UX] Upload {fname}: status {status}")
+        except Exception as e:
+            print(f"[Auto-UX] ERRO ao enviar {fname} para o GitHub: {e}")
 
 def train_and_save_model(json_path="ux_examples.json"):
     print("[Auto-UX] Lendo exemplos rotulados...")
@@ -70,10 +82,19 @@ def train_and_save_model(json_path="ux_examples.json"):
     if not examples:
         raise Exception("Nenhum exemplo rotulado encontrado!")
     print(f"[Auto-UX] {len(examples)} exemplos carregados.")
-    # Limpa duplicados
-    examples = remove_duplicates(examples)
+
+    # Remove duplicados (pelo hash do objeto json)
+    seen = set()
+    filtered = []
+    for ex in examples:
+        j = json.dumps(ex, sort_keys=True)
+        if j not in seen:
+            filtered.append(ex)
+            seen.add(j)
+    examples = filtered
     print(f"[Auto-UX] {len(examples)} exemplos após remover duplicados.")
 
+    # RandomForest
     vocab = build_vocab(examples)
     print(f"[Auto-UX] Vocab extraído: {len(vocab)} tokens.")
     X = [example_to_vector(ex, vocab) for ex in examples]
@@ -82,23 +103,12 @@ def train_and_save_model(json_path="ux_examples.json"):
     label_encoder = LabelEncoder()
     y = label_encoder.fit_transform(y_raw)
 
+    print("[Auto-UX] Treinando modelo RandomForest...")
     clf = RandomForestClassifier(n_estimators=120, random_state=42)
     clf.fit(X, y)
     print("[Auto-UX] Modelo RF treinado!")
 
-    # Treino/teste split para métricas
-    acc, cm = 1.0, None
-    if len(examples) > 5:
-        # Simple hold-out for demonstration
-        train_idx = int(len(X) * 0.8)
-        X_train, X_test = X[:train_idx], X[train_idx:]
-        y_train, y_test = y[:train_idx], y[train_idx:]
-        clf_eval = RandomForestClassifier(n_estimators=120, random_state=42)
-        clf_eval.fit(X_train, y_train)
-        y_pred = clf_eval.predict(X_test)
-        acc = float(accuracy_score(y_test, y_pred))
-        cm = confusion_matrix(y_test, y_pred).tolist()
-
+    # TF-IDF
     texts = [flatten_features(ex) for ex in examples]
     tfidf = TfidfVectorizer().fit(texts)
     print("[Auto-UX] TF-IDF treinado!")
@@ -110,6 +120,7 @@ def train_and_save_model(json_path="ux_examples.json"):
     with open("bert_emb_matrix.json", "w", encoding="utf-8") as f:
         json.dump(emb_matrix.tolist(), f)
 
+    # Salva SBERT como base64 tar.gz
     with tempfile.TemporaryDirectory() as tmpdir:
         sbert_model.save(tmpdir)
         tar_bytes = io.BytesIO()
@@ -119,7 +130,7 @@ def train_and_save_model(json_path="ux_examples.json"):
         with open("sbert_model_b64.json", "w", encoding="utf-8") as f:
             json.dump({"base64": tar_b64}, f)
 
-    # Salva artefatos
+    # Persiste tudo
     joblib.dump(clf, "model.bin")
     joblib.dump(tfidf, "model_tfidf.bin")
     with open("allWords.json", "w", encoding="utf-8") as f:
@@ -128,9 +139,14 @@ def train_and_save_model(json_path="ux_examples.json"):
         json.dump(list(label_encoder.classes_), f, ensure_ascii=False)
     with open("all_examples_texts.json", "w", encoding="utf-8") as f:
         json.dump(texts, f, ensure_ascii=False)
-    with open("metrics.json", "w", encoding="utf-8") as f:
-        json.dump({"accuracy": acc, "confusion_matrix": cm}, f)
     print("[Auto-UX] Tudo salvo (modelo, vocab, labels, tfidf, textos, embeddings, sbert-model, métricas)!")
+
+    # **Upload para o GitHub**
+    artifacts = [
+        "model.bin", "model_tfidf.bin", "allWords.json", "labels.json", 
+        "all_examples_texts.json", "bert_emb_matrix.json", "sbert_model_b64.json"
+    ]
+    upload_artifacts_to_github(artifacts)
 
 if __name__ == "__main__":
     train_and_save_model()
