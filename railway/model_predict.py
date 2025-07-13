@@ -1,9 +1,7 @@
-# model_predict.py
 import json
 import joblib
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
 import base64, tarfile, io, os, shutil
 
 _model = None
@@ -43,12 +41,12 @@ def extract_tokens(features):
     if 'contextHeadings' in features and features['contextHeadings']:
         for h in features['contextHeadings']:
             tokens += [w.lower() for w in h.split() if len(w) > 1]
-    if 'y' in features: tokens.append(f'y{int(features["y"]//10)*10}')
-    if 'siblingIndex' in features: tokens.append(f'sib{min(int(features["siblingIndex"]), 10)}')
-    if 'width' in features: tokens.append(f'w{int(features["width"]//50)*50}')
-    if 'height' in features: tokens.append(f'h{int(features["height"]//20)*20}')
-    if 'depth' in features: tokens.append(f'd{min(int(features["depth"]), 10)}')
-    if 'clickable' in features: tokens.append(f'click{features["clickable"]}')
+    if 'y' in features: tokens.append(f'y{int(features['y']//10)*10}')
+    if 'siblingIndex' in features: tokens.append(f'sib{min(int(features['siblingIndex']), 10)}')
+    if 'width' in features: tokens.append(f'w{int(features['width']//50)*50}')
+    if 'height' in features: tokens.append(f'h{int(features['height']//20)*20}')
+    if 'depth' in features: tokens.append(f'd{min(int(features['depth']), 10)}')
+    if 'clickable' in features: tokens.append(f'click{features['clickable']}')
     return tokens
 
 def build_vocab(examples):
@@ -62,17 +60,30 @@ def example_to_vector(example, vocab):
     tokens = set(extract_tokens(example))
     return [1 if w in tokens else 0 for w in vocab]
 
-def load_sbert_base64(filename):
+def load_sbert_base64(filename="sbert_model_b64.json"):
     global _sbert_model
-    with open(filename, "r", encoding="utf-8") as f:
-        tar_b64 = json.load(f)["base64"]
-        tar_bytes = base64.b64decode(tar_b64)
-        tmpdir = "./sbert_tmp_model"
-        if os.path.exists(tmpdir):
-            shutil.rmtree(tmpdir)
-        with tarfile.open(fileobj=io.BytesIO(tar_bytes), mode="r:gz") as tar:
-            tar.extractall(tmpdir)
-        _sbert_model = SentenceTransformer(tmpdir + "/model")
+    try:
+        if os.path.exists(filename):
+            with open(filename, "r", encoding="utf-8") as f:
+                tar_b64 = json.load(f)["base64"]
+                tar_bytes = base64.b64decode(tar_b64)
+                tmpdir = "./sbert_tmp_model"
+                if os.path.exists(tmpdir):
+                    shutil.rmtree(tmpdir)
+                with tarfile.open(fileobj=io.BytesIO(tar_bytes), mode="r:gz") as tar:
+                    tar.extractall(tmpdir)
+                from sentence_transformers import SentenceTransformer
+                _sbert_model = SentenceTransformer(tmpdir + "/model")
+                print("[Auto-UX] SBERT carregado localmente!")
+        else:
+            # Baixa da HuggingFace direto se não existir local
+            from sentence_transformers import SentenceTransformer
+            print("[Auto-UX] SBERT não encontrado, baixando do HuggingFace...")
+            _sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
+    except Exception as e:
+        print("[Auto-UX] Erro ao carregar SBERT:", e)
+        from sentence_transformers import SentenceTransformer
+        _sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
     return _sbert_model
 
 def _load_all():
@@ -102,44 +113,25 @@ def predict_session(features):
     X = np.array([example_to_vector(features, _vocab)])
     probs = _model.predict_proba(X)[0]
     idx = int(np.argmax(probs))
-    # Defensive check:
-    if not _labels:
-        print("[Auto-UX] WARNING: labels.json vazio, retornando 'Não rotulado'")
-        return "Não rotulado", 0.0
-    if idx >= len(_labels):
-        print(f"[Auto-UX] WARNING: Índice de predição RF ({idx}) fora do range do labels ({len(_labels)})")
-        label = _labels[0]
-        score = float(probs[0])
-    else:
-        label = _labels[idx]
-        score = float(probs[idx])
+    label = _labels[idx]
+    score = float(probs[idx])
 
     # SBERT
     sbert_vec = _sbert_model.encode([flatten_features(features)])[0]
     sims_bert = cosine_similarity([sbert_vec], _bert_emb_matrix)[0]
     idx_bert = int(np.argmax(sims_bert))
-    if idx_bert >= len(_labels):
-        print(f"[Auto-UX] WARNING: Índice SBERT ({idx_bert}) fora do range dos labels ({len(_labels)})")
-        sim_label = _labels[0]
-        sim_score = float(sims_bert[0])
-    else:
-        sim_label = _labels[idx_bert]
-        sim_score = float(sims_bert[idx_bert])
+    sim_label = _labels[idx_bert]
+    sim_score = float(sims_bert[idx_bert])
 
     # TF-IDF Fallback
     tfidf_test = _tfidf_model.transform([flatten_features(features)])
     tfidf_examples = _tfidf_model.transform(_all_texts)
     sims = cosine_similarity(tfidf_test, tfidf_examples)[0]
     idx_tfidf = int(np.argmax(sims))
-    if idx_tfidf >= len(_labels):
-        print(f"[Auto-UX] WARNING: Índice TFIDF ({idx_tfidf}) fora do range dos labels ({len(_labels)})")
-        label_tfidf = _labels[0]
-        sim_score_tfidf = float(sims[0])
-    else:
-        label_tfidf = _labels[idx_tfidf]
-        sim_score_tfidf = float(sims[idx_tfidf])
+    label_tfidf = _labels[idx_tfidf]
+    sim_score_tfidf = float(sims[idx_tfidf])
 
-    # Decision logic
+    # Decision logic: prioriza confiança alta do RF, senão SBERT, senão TFIDF
     if score >= 0.6:
         return label, score
     elif sim_score >= 0.60:
