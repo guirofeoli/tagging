@@ -12,52 +12,12 @@ EXAMPLES_FILE = "ux_examples.json"
 LABELS_FILE = "labels.json"
 VOCAB_FILE = "allWords.json"
 MODEL_FILE = "model.bin"
-TFIDF_FILE = "model_tfidf.bin"
 USERS_FILE = "users.json"
 
 @app.route("/", methods=["GET"])
 def health():
     print("[Auto-UX] API online (healthcheck)")
     return "Auto-UX API online", 200
-
-@app.route("/debug_ls", methods=["GET"])
-def debug_ls():
-    print("[Auto-UX] Listando arquivos locais")
-    base = "."
-    out = []
-    for root, dirs, files in os.walk(base):
-        for f in files:
-            p = os.path.join(root, f)
-            out.append(p)
-    return jsonify(out)
-
-@app.route("/debug_file", methods=["GET"])
-def debug_file():
-    fname = request.args.get("file")
-    login = request.args.get("login", "")
-    senha = request.args.get("senha", "")
-    print(f"[Auto-UX] Debug_file requisitado: {fname} ({login})")
-    if not fname or ".." in fname:
-        return "Arquivo não permitido", 400
-
-    try:
-        with open(USERS_FILE, encoding="utf-8") as f:
-            users = json.load(f)
-        valid = any(u.get("login") == login and u.get("senha") == senha for u in users)
-        if not valid:
-            print("[Auto-UX] Usuário inválido no debug_file")
-            return "Acesso negado!", 401
-    except Exception as e:
-        print("[Auto-UX] Erro ao acessar users.json:", e)
-        return f"Erro ao acessar users.json: {e}", 500
-
-    try:
-        with open(fname, encoding="utf-8") as f:
-            conteudo = f.read()
-        return "<pre>" + conteudo.replace("<", "&lt;") + "</pre>"
-    except Exception as e:
-        print("[Auto-UX] Erro ao ler arquivo:", fname, e)
-        return f"Erro ao ler arquivo: {e}", 500
 
 @app.route("/get_examples", methods=["GET"])
 def get_examples():
@@ -142,26 +102,6 @@ def salvar_examples():
         return jsonify({"ok": True, "msg": f"Incrementados {len(data)} exemplos. Modelo treinado!"})
     except Exception as e:
         print("[Auto-UX] ERRO no treino automático:", e)
-        return jsonify({"ok": False, "msg": str(e)}), 500
-
-@app.route("/force_train", methods=["POST"])
-def force_train():
-    print("[Auto-UX] /force_train chamado (re-treina do zero com exemplos do GitHub)")
-    try:
-        # Busca os exemplos atualizados do GitHub
-        examples_content, _ = get_file_from_github(EXAMPLES_FILE)
-        if not examples_content:
-            return jsonify({"ok": False, "msg": "Sem exemplos no GitHub"})
-        with open(EXAMPLES_FILE, "w", encoding="utf-8") as f:
-            f.write(examples_content.decode("utf-8"))
-
-        # Treina e sobrescreve os modelos .bin no backend
-        from train_ux import train_and_save_model
-        train_and_save_model(EXAMPLES_FILE)
-        print("[Auto-UX] Treinamento via /force_train concluído")
-        return jsonify({"ok": True, "msg": "Modelo re-treinado com sucesso!"})
-    except Exception as e:
-        print("[Auto-UX] ERRO no force_train:", e)
         return jsonify({"ok": False, "msg": str(e)}), 500
 
 @app.after_request
