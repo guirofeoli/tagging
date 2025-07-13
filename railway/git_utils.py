@@ -20,6 +20,7 @@ def get_file_from_github(filename):
         sha = data["sha"]
         return content, sha
     else:
+        print(f"[git_utils] Falha ao baixar {filename}: {resp.status_code} {resp.text}")
         return None, None
 
 def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False):
@@ -28,21 +29,36 @@ def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json"
     }
-    # Se binário, já espera base64 encoded
     if is_binary:
+        # Se for binário, espere bytes (ex: joblib.dump(...)), então encode para base64.
+        if isinstance(content, bytes):
+            b64_content = base64.b64encode(content).decode("utf-8")
+        else:
+            b64_content = content  # Assume já está base64
         payload = {
             "message": commit_msg,
-            "content": content,  # já base64 encoded!
+            "content": b64_content,
             "branch": GITHUB_BRANCH,
+            "encoding": "base64"
         }
     else:
+        # Para texto, espera string, transforma em utf-8 bytes e b64.
+        if isinstance(content, str):
+            b64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+        else:
+            b64_content = base64.b64encode(content).decode("utf-8")
         payload = {
             "message": commit_msg,
-            "content": base64.b64encode(content.encode("utf-8")).decode("utf-8"),
-            "branch": GITHUB_BRANCH,
+            "content": b64_content,
+            "branch": GITHUB_BRANCH
         }
     if sha:
         payload["sha"] = sha
 
     resp = requests.put(url, json=payload, headers=headers)
-    return resp.status_code, resp.json()
+    try:
+        return resp.status_code, resp.json()
+    except Exception:
+        return resp.status_code, {}
+
+
