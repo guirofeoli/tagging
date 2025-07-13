@@ -20,6 +20,7 @@ def get_file_from_github(filename):
         sha = data["sha"]
         return content, sha
     else:
+        print(f"[git_utils] Falha ao baixar {filename}: {resp.status_code} {resp.text}")
         return None, None
 
 def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False):
@@ -28,24 +29,34 @@ def save_file_to_github(filename, content, commit_msg, sha=None, is_binary=False
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json"
     }
-    # Se for binário, content já deve ser uma string base64
+
     if is_binary:
         if isinstance(content, bytes):
-            content_b64 = base64.b64encode(content).decode("utf-8")
+            b64_content = base64.b64encode(content).decode("utf-8")
         else:
-            content_b64 = content  # já deve ser base64 string
+            b64_content = content  # Assume já está em base64
+        payload = {
+            "message": commit_msg,
+            "content": b64_content,
+            "branch": GITHUB_BRANCH,
+            "encoding": "base64"
+        }
     else:
-        if isinstance(content, bytes):
-            content_b64 = base64.b64encode(content).decode("utf-8")
+        if isinstance(content, str):
+            b64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
         else:
-            content_b64 = base64.b64encode(content.encode("utf-8")).decode("utf-8")
-    payload = {
-        "message": commit_msg,
-        "content": content_b64,
-        "branch": GITHUB_BRANCH,
-    }
+            b64_content = base64.b64encode(content).decode("utf-8")
+        payload = {
+            "message": commit_msg,
+            "content": b64_content,
+            "branch": GITHUB_BRANCH
+        }
     if sha:
         payload["sha"] = sha
 
     resp = requests.put(url, json=payload, headers=headers)
-    return resp.status_code, resp.json()
+    try:
+        return resp.status_code, resp.json()
+    except Exception:
+        print(f"[git_utils] Falha ao enviar {filename}: {resp.status_code} {resp.text}")
+        return resp.status_code, {}
